@@ -1,0 +1,22 @@
+[
+  {"name": "Pasta Primavera", "cuisine": "Italian", "dietary_tags": ["vegetarian"], "ingredients": ["pasta", "zucchini", "tomato", "olive oil"]},
+  {"name": "Grilled Chicken Bowl", "cuisine": "American", "dietary_tags": ["gluten-free", "high-protein"], "ingredients": ["chicken", "rice", "broccoli"]},
+  {"name": "Lentil Soup", "cuisine": "Mediterranean", "dietary_tags": ["vegetarian", "vegan"], "ingredients": ["lentils", "carrot", "onion", "cumin"]},
+  {"name": "Beef Tacos", "cuisine": "Mexican", "dietary_tags": [], "ingredients": ["beef", "corn tortilla", "salsa", "cheese"]},
+  {"name": "Margherita Pizza", "cuisine": "Italian", "dietary_tags": ["vegetarian"], "ingredients": ["dough", "tomato", "mozzarella", "basil"]},
+  {"name": "Tofu Stir Fry", "cuisine": "Asian", "dietary_tags": ["vegetarian", "vegan", "gluten-free"], "ingredients": ["tofu", "broccoli", "soy sauce", "ginger"]},
+  {"name": "Caesar Salad", "cuisine": "American", "dietary_tags": ["vegetarian"], "ingredients": ["romaine", "parmesan", "croutons", "caesar dressing"]},
+  {"name": "Salmon with Rice", "cuisine": "Japanese", "dietary_tags": ["gluten-free", "high-protein"], "ingredients": ["salmon", "rice", "soy sauce", "sesame"]},
+  {"name": "Black Bean Burrito", "cuisine": "Mexican", "dietary_tags": ["vegetarian"], "ingredients": ["black beans", "flour tortilla", "rice", "salsa"]},
+  {"name": "Chicken Tikka Masala", "cuisine": "Indian", "dietary_tags": ["gluten-free", "high-protein"], "ingredients": ["chicken", "tomato", "cream", "spices"]},
+  {"name": "Veggie Burger", "cuisine": "American", "dietary_tags": ["vegetarian"], "ingredients": ["veggie patty", "bun", "lettuce", "tomato"]},
+  {"name": "Shrimp Fried Rice", "cuisine": "Asian", "dietary_tags": ["gluten-free"], "ingredients": ["shrimp", "rice", "egg", "soy sauce"]},
+  {"name": "Caprese Salad", "cuisine": "Italian", "dietary_tags": ["vegetarian", "gluten-free"], "ingredients": ["tomato", "mozzarella", "basil", "olive oil"]},
+  {"name": "Turkey Sandwich", "cuisine": "American", "dietary_tags": ["high-protein"], "ingredients": ["turkey", "bread", "lettuce", "mustard"]},
+  {"name": "Chickpea Curry", "cuisine": "Indian", "dietary_tags": ["vegetarian", "vegan", "gluten-free"], "ingredients": ["chickpeas", "tomato", "coconut milk", "curry powder"]},
+  {"name": "Beef Stir Fry", "cuisine": "Asian", "dietary_tags": ["high-protein"], "ingredients": ["beef", "bell pepper", "soy sauce", "garlic"]},
+  {"name": "Greek Salad", "cuisine": "Mediterranean", "dietary_tags": ["vegetarian", "gluten-free"], "ingredients": ["cucumber", "tomato", "feta", "olives"]},
+  {"name": "Spaghetti Bolognese", "cuisine": "Italian", "dietary_tags": [], "ingredients": ["spaghetti", "beef", "tomato sauce", "parmesan"]},
+  {"name": "Avocado Toast", "cuisine": "American", "dietary_tags": ["vegetarian", "vegan"], "ingredients": ["bread", "avocado", "lemon", "chili flakes"]},
+  {"name": "Miso Soup with Tofu", "cuisine": "Japanese", "dietary_tags": ["vegetarian", "vegan"], "ingredients": ["miso paste", "tofu", "seaweed", "green onion"]}
+]
