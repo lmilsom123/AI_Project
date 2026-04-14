@@ -5,13 +5,28 @@ from main import run_pipeline, LOG_FILE
 
 st.title("🍽️ What Should I Eat?")
 
-dietary = st.selectbox("Dietary restriction", ["", "vegetarian", "vegan", "gluten-free"])
+# ✅ UPDATED: multi-select dietary
+dietary_options = [
+    "vegetarian", "vegan", "gluten-free",
+    "high-protein", "low-carb", "low-fat",
+    "keto", "bulking", "cutting",
+    "dairy-free", "pescatarian"
+]
+
+dietary = st.multiselect("Dietary preferences", dietary_options)
+
+# ✅ NEW: allergies input
+allergy_options = ["dairy", "gluten", "nuts", "soy", "shellfish", "egg"]
+allergies = st.multiselect("Allergies", allergy_options)
+
 mood = st.text_input("What are you in the mood for?")
 ingredients = st.text_input("Ingredients you have (comma separated)")
 
 if st.button("Suggest a Meal"):
     user_input = {
-        "dietary": dietary,
+        # ✅ IMPORTANT: convert list → comma string (matches your backend)
+        "dietary": ", ".join(dietary),
+        "allergies": ", ".join(allergies),
         "mood": mood,
         "ingredients": [i.strip() for i in ingredients.split(",")] if ingredients else []
     }
@@ -30,10 +45,13 @@ if st.button("Suggest a Meal"):
     if Path(LOG_FILE).exists():
         with open(LOG_FILE) as f:
             logs = json.load(f)
+
         total = len(logs)
         successes = sum(1 for l in logs if l["success"])
+
         st.divider()
         st.subheader("📊 Dashboard")
+
         col1, col2, col3 = st.columns(3)
         col1.metric("Total Queries", total)
         col2.metric("Success Rate", f"{successes/total*100:.1f}%")
