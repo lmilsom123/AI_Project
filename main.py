@@ -16,7 +16,6 @@ MODEL_NAME = "mistral"
 MAX_RETRIES = 3
 LOG_FILE = "logs.json"
 
-# in CONFIG section, replace the FOODS = [...] block with this:
 with open("foods.json") as f:
     FOODS = json.load(f)
 
@@ -32,11 +31,28 @@ FORBIDDEN_KEYWORDS = {
 
 def assemble_context(user_input: dict) -> str:
     dietary = user_input.get("dietary", "").lower()
+    allergies = user_input.get("allergies", "").lower()
 
-    filtered = [f for f in FOODS if dietary in f["dietary_tags"]] if dietary else FOODS
+    dietary_list = [d.strip() for d in dietary.split(",") if d]
+    allergy_list = [a.strip() for a in allergies.split(",") if a]
 
+    filtered = [
+        f for f in FOODS
+        if (all(tag in f["dietary_tags"] for tag in dietary_list) if dietary_list else True)
+        and (not any(allergen in f.get("allergens", []) for allergen in allergy_list))
+    ]
+
+    if not filtered:
+        filtered = FOODS
+
+    # ✅ UPDATED: include macros in context
     food_list = "\n".join(
-        f"- {item['name']} ({item['cuisine']}): {', '.join(item['ingredients'])}"
+        f"- {item['name']} ({item['cuisine']}): "
+        f"{', '.join(item['ingredients'])} | "
+        f"Calories: {item['macros']['calories']}, "
+        f"Protein: {item['macros']['protein']}g, "
+        f"Carbs: {item['macros']['carbs']}g, "
+        f"Fat: {item['macros']['fat']}g"
         for item in filtered
     )
 
@@ -44,15 +60,20 @@ def assemble_context(user_input: dict) -> str:
 You are a helpful meal suggestion assistant.
 
 The user wants: {user_input.get('mood', 'something good')}
-Dietary restriction: {dietary if dietary else 'none'}
+Dietary preferences: {dietary if dietary else 'none'}
+Allergies: {allergies if allergies else 'none'}
 Ingredients they have: {', '.join(user_input.get('ingredients', []))}
 
 Available meals:
 {food_list}
 
-Suggest ONE meal from the list. Explain briefly why it fits.
+Suggest ONE meal from the list.
+
+Use the macros provided above EXACTLY as written for that meal.
+
 Use exactly this format:
 MEAL: <meal name>
+MACROS: Calories=<cal>, Protein=<g>, Carbs=<g>, Fat=<g>
 REASON: <one sentence>
 """
 
@@ -75,19 +96,35 @@ def call_ollama(prompt: str) -> str:
 
 def validate_output(raw_output: str, user_input: dict) -> tuple[bool, str]:
     lines = raw_output.strip().splitlines()
+
     has_meal = any(line.startswith("MEAL:") for line in lines)
+    has_macros = any(line.startswith("MACROS:") for line in lines)
     has_reason = any(line.startswith("REASON:") for line in lines)
 
-    if not has_meal or not has_reason:
-        return False, "Output missing MEAL or REASON fields"
+    if not has_meal or not has_macros or not has_reason:
+        return False, "Output missing MEAL, MACROS, or REASON fields"
 
     dietary = user_input.get("dietary", "").lower()
+    allergies = user_input.get("allergies", "").lower()
+
+    dietary_list = [d.strip() for d in dietary.split(",") if d]
+    allergy_list = [a.strip() for a in allergies.split(",") if a]
+
     meal_line = next((l for l in lines if l.startswith("MEAL:")), "").lower()
 
-    if dietary in FORBIDDEN_KEYWORDS:
-        for word in FORBIDDEN_KEYWORDS[dietary]:
-            if word in meal_line:
-                return False, f"Meal may contain '{word}', violating {dietary} restriction"
+    # dietary validation
+    for d in dietary_list:
+        if d in FORBIDDEN_KEYWORDS:
+            for word in FORBIDDEN_KEYWORDS[d]:
+                if word in meal_line:
+                    return False, f"Meal may contain '{word}', violating {d}"
+
+    # allergy validation
+    for food in FOODS:
+        if food["name"].lower() in meal_line:
+            for allergen in food.get("allergens", []):
+                if allergen in allergy_list:
+                    return False, f"Meal contains allergen '{allergen}'"
 
     return True, "OK"
 
@@ -103,10 +140,20 @@ def run_pipeline(user_input: dict) -> dict:
         raw_output = call_ollama(context)
         is_valid, reason = validate_output(raw_output, user_input)
 
-        trace.append({"attempt": attempt, "output": raw_output, "valid": is_valid, "reason": reason})
+        trace.append({
+            "attempt": attempt,
+            "output": raw_output,
+            "valid": is_valid,
+            "reason": reason
+        })
 
         if is_valid:
-            return {"success": True, "output": raw_output, "attempts": attempt, "trace": trace}
+            return {
+                "success": True,
+                "output": raw_output,
+                "attempts": attempt,
+                "trace": trace
+            }
 
     return {
         "success": False,
@@ -121,12 +168,14 @@ def run_pipeline(user_input: dict) -> dict:
 
 def log_and_display(result: dict, user_input: dict):
     logs = []
+
     if Path(LOG_FILE).exists():
         with open(LOG_FILE) as f:
             logs = json.load(f)
 
     logs.append({
         "dietary": user_input.get("dietary"),
+        "allergies": user_input.get("allergies"),
         "success": result["success"],
         "attempts": result["attempts"]
     })
@@ -136,6 +185,7 @@ def log_and_display(result: dict, user_input: dict):
 
     total = len(logs)
     successes = sum(1 for l in logs if l["success"])
+
     print("\n--- DASHBOARD ---")
     print(f"Total queries:     {total}")
     print(f"Success rate:      {successes/total*100:.1f}%")
@@ -148,12 +198,15 @@ def log_and_display(result: dict, user_input: dict):
 
 if __name__ == "__main__":
     print("=== What Should I Eat? ===")
-    dietary = input("Dietary restriction (vegetarian/vegan/gluten-free or leave blank): ").strip()
+
+    dietary = input("Dietary preferences (comma separated): ").strip()
+    allergies = input("Allergies (comma separated): ").strip()
     mood = input("What are you in the mood for? ").strip()
     ingredients = input("Ingredients you have (comma separated, or leave blank): ").strip()
 
     user_input = {
         "dietary": dietary,
+        "allergies": allergies,
         "mood": mood,
         "ingredients": [i.strip() for i in ingredients.split(",")] if ingredients else []
     }
