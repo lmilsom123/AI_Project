@@ -2,217 +2,5086 @@
   {
     "name": "Pasta Primavera",
     "cuisine": "Italian",
-    "dietary_tags": ["vegetarian", "high-carb"],
-    "ingredients": ["pasta", "zucchini", "tomato", "olive oil"],
-    "macros": {"calories": 450, "protein": 12, "carbs": 65, "fat": 15},
-    "allergens": ["gluten"]
+    "dietary_tags": [
+      "vegetarian",
+      "high-carb"
+    ],
+    "ingredients": [
+      "pasta",
+      "zucchini",
+      "tomato",
+      "olive oil"
+    ],
+    "macros": {
+      "calories": 450,
+      "protein": 12,
+      "carbs": 65,
+      "fat": 15
+    },
+    "allergens": [
+      "gluten"
+    ]
   },
   {
     "name": "Grilled Chicken Bowl",
     "cuisine": "American",
-    "dietary_tags": ["gluten-free", "high-protein", "bulking"],
-    "ingredients": ["chicken", "rice", "broccoli"],
-    "macros": {"calories": 520, "protein": 42, "carbs": 50, "fat": 12},
+    "dietary_tags": [
+      "gluten-free",
+      "high-protein",
+      "bulking"
+    ],
+    "ingredients": [
+      "chicken",
+      "rice",
+      "broccoli"
+    ],
+    "macros": {
+      "calories": 520,
+      "protein": 42,
+      "carbs": 50,
+      "fat": 12
+    },
     "allergens": []
   },
   {
     "name": "Lentil Soup",
     "cuisine": "Mediterranean",
-    "dietary_tags": ["vegetarian", "vegan", "dairy-free"],
-    "ingredients": ["lentils", "carrot", "onion", "cumin"],
-    "macros": {"calories": 300, "protein": 18, "carbs": 45, "fat": 5},
+    "dietary_tags": [
+      "vegetarian",
+      "vegan",
+      "dairy-free"
+    ],
+    "ingredients": [
+      "lentils",
+      "carrot",
+      "onion",
+      "cumin"
+    ],
+    "macros": {
+      "calories": 300,
+      "protein": 18,
+      "carbs": 45,
+      "fat": 5
+    },
     "allergens": []
   },
   {
     "name": "Beef Tacos",
     "cuisine": "Mexican",
-    "dietary_tags": ["high-protein"],
-    "ingredients": ["beef", "corn tortilla", "salsa", "cheese"],
-    "macros": {"calories": 600, "protein": 28, "carbs": 50, "fat": 30},
-    "allergens": ["dairy"]
+    "dietary_tags": [
+      "high-protein"
+    ],
+    "ingredients": [
+      "beef",
+      "corn tortilla",
+      "salsa",
+      "cheese"
+    ],
+    "macros": {
+      "calories": 600,
+      "protein": 28,
+      "carbs": 50,
+      "fat": 30
+    },
+    "allergens": [
+      "dairy"
+    ]
   },
   {
     "name": "Margherita Pizza",
     "cuisine": "Italian",
-    "dietary_tags": ["vegetarian", "high-carb"],
-    "ingredients": ["dough", "tomato", "mozzarella", "basil"],
-    "macros": {"calories": 700, "protein": 25, "carbs": 80, "fat": 28},
-    "allergens": ["gluten", "dairy"]
+    "dietary_tags": [
+      "vegetarian",
+      "high-carb"
+    ],
+    "ingredients": [
+      "dough",
+      "tomato",
+      "mozzarella",
+      "basil"
+    ],
+    "macros": {
+      "calories": 700,
+      "protein": 25,
+      "carbs": 80,
+      "fat": 28
+    },
+    "allergens": [
+      "gluten",
+      "dairy"
+    ]
   },
   {
     "name": "Tofu Stir Fry",
     "cuisine": "Asian",
-    "dietary_tags": ["vegetarian", "vegan", "dairy-free", "low-carb"],
-    "ingredients": ["tofu", "broccoli", "soy sauce", "ginger"],
-    "macros": {"calories": 400, "protein": 20, "carbs": 35, "fat": 18},
-    "allergens": ["soy"]
+    "dietary_tags": [
+      "vegetarian",
+      "vegan",
+      "dairy-free",
+      "low-carb"
+    ],
+    "ingredients": [
+      "tofu",
+      "broccoli",
+      "soy sauce",
+      "ginger"
+    ],
+    "macros": {
+      "calories": 400,
+      "protein": 20,
+      "carbs": 35,
+      "fat": 18
+    },
+    "allergens": [
+      "soy"
+    ]
   },
   {
     "name": "Salmon with Rice",
     "cuisine": "Japanese",
-    "dietary_tags": ["gluten-free", "high-protein", "pescatarian", "bulking"],
-    "ingredients": ["salmon", "rice", "soy sauce", "sesame"],
-    "macros": {"calories": 550, "protein": 40, "carbs": 45, "fat": 20},
-    "allergens": ["soy"]
+    "dietary_tags": [
+      "gluten-free",
+      "high-protein",
+      "pescatarian",
+      "bulking"
+    ],
+    "ingredients": [
+      "salmon",
+      "rice",
+      "soy sauce",
+      "sesame"
+    ],
+    "macros": {
+      "calories": 550,
+      "protein": 40,
+      "carbs": 45,
+      "fat": 20
+    },
+    "allergens": [
+      "soy"
+    ]
   },
   {
     "name": "Chicken Tikka Masala",
     "cuisine": "Indian",
-    "dietary_tags": ["gluten-free", "high-protein", "bulking"],
-    "ingredients": ["chicken", "tomato", "cream", "spices"],
-    "macros": {"calories": 600, "protein": 38, "carbs": 35, "fat": 30},
-    "allergens": ["dairy"]
+    "dietary_tags": [
+      "gluten-free",
+      "high-protein",
+      "bulking"
+    ],
+    "ingredients": [
+      "chicken",
+      "tomato",
+      "cream",
+      "spices"
+    ],
+    "macros": {
+      "calories": 600,
+      "protein": 38,
+      "carbs": 35,
+      "fat": 30
+    },
+    "allergens": [
+      "dairy"
+    ]
   },
   {
     "name": "Chickpea Curry",
     "cuisine": "Indian",
-    "dietary_tags": ["vegetarian", "vegan", "gluten-free", "dairy-free"],
-    "ingredients": ["chickpeas", "tomato", "coconut milk", "curry powder"],
-    "macros": {"calories": 450, "protein": 15, "carbs": 50, "fat": 20},
+    "dietary_tags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      "chickpeas",
+      "tomato",
+      "coconut milk",
+      "curry powder"
+    ],
+    "macros": {
+      "calories": 450,
+      "protein": 15,
+      "carbs": 50,
+      "fat": 20
+    },
     "allergens": []
   },
   {
     "name": "Spaghetti Bolognese",
     "cuisine": "Italian",
-    "dietary_tags": ["high-protein", "high-carb"],
-    "ingredients": ["spaghetti", "beef", "tomato sauce", "parmesan"],
-    "macros": {"calories": 650, "protein": 30, "carbs": 70, "fat": 25},
-    "allergens": ["gluten", "dairy"]
+    "dietary_tags": [
+      "high-protein",
+      "high-carb"
+    ],
+    "ingredients": [
+      "spaghetti",
+      "beef",
+      "tomato sauce",
+      "parmesan"
+    ],
+    "macros": {
+      "calories": 650,
+      "protein": 30,
+      "carbs": 70,
+      "fat": 25
+    },
+    "allergens": [
+      "gluten",
+      "dairy"
+    ]
   },
   {
     "name": "Egg White Omelette",
     "cuisine": "American",
-    "dietary_tags": ["high-protein", "low-carb", "cutting"],
-    "ingredients": ["egg whites", "spinach", "mushroom"],
-    "macros": {"calories": 220, "protein": 28, "carbs": 6, "fat": 5},
-    "allergens": ["egg"]
+    "dietary_tags": [
+      "high-protein",
+      "low-carb",
+      "cutting"
+    ],
+    "ingredients": [
+      "egg whites",
+      "spinach",
+      "mushroom"
+    ],
+    "macros": {
+      "calories": 220,
+      "protein": 28,
+      "carbs": 6,
+      "fat": 5
+    },
+    "allergens": [
+      "egg"
+    ]
   },
   {
     "name": "Steak and Sweet Potato",
     "cuisine": "American",
-    "dietary_tags": ["high-protein", "gluten-free", "bulking"],
-    "ingredients": ["steak", "sweet potato", "butter"],
-    "macros": {"calories": 650, "protein": 45, "carbs": 45, "fat": 30},
-    "allergens": ["dairy"]
+    "dietary_tags": [
+      "high-protein",
+      "gluten-free",
+      "bulking"
+    ],
+    "ingredients": [
+      "steak",
+      "sweet potato",
+      "butter"
+    ],
+    "macros": {
+      "calories": 650,
+      "protein": 45,
+      "carbs": 45,
+      "fat": 30
+    },
+    "allergens": [
+      "dairy"
+    ]
   },
   {
     "name": "Protein Pancakes",
     "cuisine": "American",
-    "dietary_tags": ["high-protein", "bulking"],
-    "ingredients": ["protein powder", "egg", "oats"],
-    "macros": {"calories": 400, "protein": 30, "carbs": 35, "fat": 10},
-    "allergens": ["egg", "gluten"]
+    "dietary_tags": [
+      "high-protein",
+      "bulking"
+    ],
+    "ingredients": [
+      "protein powder",
+      "egg",
+      "oats"
+    ],
+    "macros": {
+      "calories": 400,
+      "protein": 30,
+      "carbs": 35,
+      "fat": 10
+    },
+    "allergens": [
+      "egg",
+      "gluten"
+    ]
   },
   {
     "name": "Greek Yogurt Bowl",
     "cuisine": "Mediterranean",
-    "dietary_tags": ["high-protein", "high-carb", "bulking"],
-    "ingredients": ["greek yogurt", "honey", "berries", "granola"],
-    "macros": {"calories": 350, "protein": 25, "carbs": 40, "fat": 8},
-    "allergens": ["dairy", "gluten"]
+    "dietary_tags": [
+      "high-protein",
+      "high-carb",
+      "bulking"
+    ],
+    "ingredients": [
+      "greek yogurt",
+      "honey",
+      "berries",
+      "granola"
+    ],
+    "macros": {
+      "calories": 350,
+      "protein": 25,
+      "carbs": 40,
+      "fat": 8
+    },
+    "allergens": [
+      "dairy",
+      "gluten"
+    ]
   },
   {
     "name": "Chicken Caesar Wrap",
     "cuisine": "American",
-    "dietary_tags": ["high-protein"],
-    "ingredients": ["chicken", "tortilla", "romaine", "caesar dressing"],
-    "macros": {"calories": 550, "protein": 35, "carbs": 45, "fat": 22},
-    "allergens": ["gluten", "dairy", "egg"]
+    "dietary_tags": [
+      "high-protein"
+    ],
+    "ingredients": [
+      "chicken",
+      "tortilla",
+      "romaine",
+      "caesar dressing"
+    ],
+    "macros": {
+      "calories": 550,
+      "protein": 35,
+      "carbs": 45,
+      "fat": 22
+    },
+    "allergens": [
+      "gluten",
+      "dairy",
+      "egg"
+    ]
   },
   {
     "name": "Turkey Chili",
     "cuisine": "American",
-    "dietary_tags": ["high-protein", "gluten-free", "cutting"],
-    "ingredients": ["ground turkey", "beans", "tomato", "spices"],
-    "macros": {"calories": 480, "protein": 40, "carbs": 35, "fat": 15},
+    "dietary_tags": [
+      "high-protein",
+      "gluten-free",
+      "cutting"
+    ],
+    "ingredients": [
+      "ground turkey",
+      "beans",
+      "tomato",
+      "spices"
+    ],
+    "macros": {
+      "calories": 480,
+      "protein": 40,
+      "carbs": 35,
+      "fat": 15
+    },
     "allergens": []
   },
   {
     "name": "Shrimp Tacos",
     "cuisine": "Mexican",
-    "dietary_tags": ["high-protein", "pescatarian"],
-    "ingredients": ["shrimp", "tortilla", "cabbage", "lime sauce"],
-    "macros": {"calories": 500, "protein": 30, "carbs": 45, "fat": 18},
-    "allergens": ["shellfish"]
+    "dietary_tags": [
+      "high-protein",
+      "pescatarian"
+    ],
+    "ingredients": [
+      "shrimp",
+      "tortilla",
+      "cabbage",
+      "lime sauce"
+    ],
+    "macros": {
+      "calories": 500,
+      "protein": 30,
+      "carbs": 45,
+      "fat": 18
+    },
+    "allergens": [
+      "shellfish"
+    ]
   },
   {
     "name": "Quinoa Veggie Bowl",
     "cuisine": "Mediterranean",
-    "dietary_tags": ["vegan", "gluten-free", "high-carb", "dairy-free"],
-    "ingredients": ["quinoa", "chickpeas", "spinach", "olive oil"],
-    "macros": {"calories": 420, "protein": 16, "carbs": 55, "fat": 14},
+    "dietary_tags": [
+      "vegan",
+      "gluten-free",
+      "high-carb",
+      "dairy-free"
+    ],
+    "ingredients": [
+      "quinoa",
+      "chickpeas",
+      "spinach",
+      "olive oil"
+    ],
+    "macros": {
+      "calories": 420,
+      "protein": 16,
+      "carbs": 55,
+      "fat": 14
+    },
     "allergens": []
   },
   {
     "name": "BBQ Chicken Flatbread",
     "cuisine": "American",
-    "dietary_tags": ["high-protein"],
-    "ingredients": ["chicken", "flatbread", "bbq sauce", "cheese"],
-    "macros": {"calories": 600, "protein": 32, "carbs": 60, "fat": 22},
-    "allergens": ["gluten", "dairy"]
+    "dietary_tags": [
+      "high-protein"
+    ],
+    "ingredients": [
+      "chicken",
+      "flatbread",
+      "bbq sauce",
+      "cheese"
+    ],
+    "macros": {
+      "calories": 600,
+      "protein": 32,
+      "carbs": 60,
+      "fat": 22
+    },
+    "allergens": [
+      "gluten",
+      "dairy"
+    ]
   },
   {
     "name": "Teriyaki Chicken Bowl",
     "cuisine": "Asian",
-    "dietary_tags": ["high-protein", "bulking"],
-    "ingredients": ["chicken", "rice", "teriyaki sauce", "broccoli"],
-    "macros": {"calories": 580, "protein": 38, "carbs": 65, "fat": 12},
-    "allergens": ["soy"]
+    "dietary_tags": [
+      "high-protein",
+      "bulking"
+    ],
+    "ingredients": [
+      "chicken",
+      "rice",
+      "teriyaki sauce",
+      "broccoli"
+    ],
+    "macros": {
+      "calories": 580,
+      "protein": 38,
+      "carbs": 65,
+      "fat": 12
+    },
+    "allergens": [
+      "soy"
+    ]
   },
   {
     "name": "Zucchini Noodles with Pesto",
     "cuisine": "Italian",
-    "dietary_tags": ["vegetarian", "low-carb", "keto"],
-    "ingredients": ["zucchini", "pesto", "parmesan"],
-    "macros": {"calories": 300, "protein": 10, "carbs": 15, "fat": 22},
-    "allergens": ["dairy", "nuts"]
+    "dietary_tags": [
+      "vegetarian",
+      "low-carb",
+      "keto"
+    ],
+    "ingredients": [
+      "zucchini",
+      "pesto",
+      "parmesan"
+    ],
+    "macros": {
+      "calories": 300,
+      "protein": 10,
+      "carbs": 15,
+      "fat": 22
+    },
+    "allergens": [
+      "dairy",
+      "nuts"
+    ]
   },
   {
     "name": "Burrito Bowl",
     "cuisine": "Mexican",
-    "dietary_tags": ["gluten-free", "high-protein", "bulking"],
-    "ingredients": ["rice", "beans", "chicken", "guacamole"],
-    "macros": {"calories": 650, "protein": 35, "carbs": 70, "fat": 25},
+    "dietary_tags": [
+      "gluten-free",
+      "high-protein",
+      "bulking"
+    ],
+    "ingredients": [
+      "rice",
+      "beans",
+      "chicken",
+      "guacamole"
+    ],
+    "macros": {
+      "calories": 650,
+      "protein": 35,
+      "carbs": 70,
+      "fat": 25
+    },
     "allergens": []
   },
   {
     "name": "Pho with Chicken",
     "cuisine": "Vietnamese",
-    "dietary_tags": ["gluten-free", "high-protein"],
-    "ingredients": ["rice noodles", "chicken", "broth", "herbs"],
-    "macros": {"calories": 450, "protein": 30, "carbs": 55, "fat": 8},
+    "dietary_tags": [
+      "gluten-free",
+      "high-protein"
+    ],
+    "ingredients": [
+      "rice noodles",
+      "chicken",
+      "broth",
+      "herbs"
+    ],
+    "macros": {
+      "calories": 450,
+      "protein": 30,
+      "carbs": 55,
+      "fat": 8
+    },
     "allergens": []
   },
   {
     "name": "Pad Thai",
     "cuisine": "Thai",
-    "dietary_tags": ["high-carb"],
-    "ingredients": ["rice noodles", "egg", "peanuts", "shrimp"],
-    "macros": {"calories": 700, "protein": 25, "carbs": 80, "fat": 30},
-    "allergens": ["nuts", "egg", "shellfish"]
+    "dietary_tags": [
+      "high-carb"
+    ],
+    "ingredients": [
+      "rice noodles",
+      "egg",
+      "peanuts",
+      "shrimp"
+    ],
+    "macros": {
+      "calories": 700,
+      "protein": 25,
+      "carbs": 80,
+      "fat": 30
+    },
+    "allergens": [
+      "nuts",
+      "egg",
+      "shellfish"
+    ]
   },
   {
     "name": "Mediterranean Chicken Plate",
     "cuisine": "Mediterranean",
-    "dietary_tags": ["high-protein", "gluten-free"],
-    "ingredients": ["chicken", "hummus", "cucumber", "olive oil"],
-    "macros": {"calories": 550, "protein": 40, "carbs": 30, "fat": 28},
+    "dietary_tags": [
+      "high-protein",
+      "gluten-free"
+    ],
+    "ingredients": [
+      "chicken",
+      "hummus",
+      "cucumber",
+      "olive oil"
+    ],
+    "macros": {
+      "calories": 550,
+      "protein": 40,
+      "carbs": 30,
+      "fat": 28
+    },
     "allergens": []
   },
   {
     "name": "Avocado Chicken Salad",
     "cuisine": "American",
-    "dietary_tags": ["low-carb", "high-protein", "keto"],
-    "ingredients": ["chicken", "avocado", "mayo", "celery"],
-    "macros": {"calories": 500, "protein": 35, "carbs": 10, "fat": 35},
-    "allergens": ["egg"]
+    "dietary_tags": [
+      "low-carb",
+      "high-protein",
+      "keto"
+    ],
+    "ingredients": [
+      "chicken",
+      "avocado",
+      "mayo",
+      "celery"
+    ],
+    "macros": {
+      "calories": 500,
+      "protein": 35,
+      "carbs": 10,
+      "fat": 35
+    },
+    "allergens": [
+      "egg"
+    ]
   },
   {
     "name": "Breakfast Burrito",
     "cuisine": "Mexican",
-    "dietary_tags": ["high-protein", "bulking"],
-    "ingredients": ["egg", "tortilla", "cheese", "sausage"],
-    "macros": {"calories": 650, "protein": 30, "carbs": 50, "fat": 35},
-    "allergens": ["egg", "dairy", "gluten"]
+    "dietary_tags": [
+      "high-protein",
+      "bulking"
+    ],
+    "ingredients": [
+      "egg",
+      "tortilla",
+      "cheese",
+      "sausage"
+    ],
+    "macros": {
+      "calories": 650,
+      "protein": 30,
+      "carbs": 50,
+      "fat": 35
+    },
+    "allergens": [
+      "egg",
+      "dairy",
+      "gluten"
+    ]
+  },
+  {
+    "name": "Tender turkey Bowl",
+    "cuisine": "Mediterranean",
+    "dietary_tags": [
+      "dairy-free",
+      "high-protein",
+      "keto",
+      "high-carb"
+    ],
+    "ingredients": [
+      "coconut oil",
+      "white beans",
+      "brussels sprouts",
+      "couscous",
+      "beef"
+    ],
+    "macros": {
+      "calories": 259,
+      "protein": 15,
+      "carbs": 31,
+      "fat": 31
+    },
+    "allergens": [
+      "gluten"
+    ]
+  },
+  {
+    "name": "Herb-Infused duck",
+    "cuisine": "Italian",
+    "dietary_tags": [
+      "gluten-free",
+      "low-carb",
+      "bulking",
+      "high-protein",
+      "dairy-free"
+    ],
+    "ingredients": [
+      "cabbage",
+      "mushrooms",
+      "chicken",
+      "peanuts"
+    ],
+    "macros": {
+      "calories": 525,
+      "protein": 43,
+      "carbs": 56,
+      "fat": 25
+    },
+    "allergens": [
+      "nuts"
+    ]
+  },
+  {
+    "name": "Baked eggs",
+    "cuisine": "Brazilian",
+    "dietary_tags": [
+      "gluten-free",
+      "dairy-free",
+      "low-carb",
+      "high-protein"
+    ],
+    "ingredients": [
+      "cumin",
+      "salmon",
+      "oregano",
+      "turmeric",
+      "peanuts"
+    ],
+    "macros": {
+      "calories": 711,
+      "protein": 34,
+      "carbs": 75,
+      "fat": 27
+    },
+    "allergens": [
+      "nuts",
+      "fish"
+    ]
+  },
+  {
+    "name": "Stuffed eggs",
+    "cuisine": "Portuguese",
+    "dietary_tags": [
+      "high-carb",
+      "bulking",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "mozzarella",
+      "farro",
+      "tilapia"
+    ],
+    "macros": {
+      "calories": 393,
+      "protein": 32,
+      "carbs": 52,
+      "fat": 23
+    },
+    "allergens": [
+      "gluten",
+      "dairy",
+      "fish"
+    ]
+  },
+  {
+    "name": "Crispy tuna",
+    "cuisine": "Japanese",
+    "dietary_tags": [
+      "dairy-free",
+      "high-protein",
+      "vegetarian",
+      "high-carb"
+    ],
+    "ingredients": [
+      "basil",
+      "green beans",
+      "flatbread",
+      "seitan",
+      "lettuce"
+    ],
+    "macros": {
+      "calories": 235,
+      "protein": 26,
+      "carbs": 19,
+      "fat": 18
+    },
+    "allergens": [
+      "gluten"
+    ]
+  },
+  {
+    "name": "Crispy lamb",
+    "cuisine": "Peruvian",
+    "dietary_tags": [
+      "gluten-free",
+      "high-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "pepper",
+      "garlic",
+      "lettuce",
+      "sweet potato",
+      "halibut"
+    ],
+    "macros": {
+      "calories": 798,
+      "protein": 48,
+      "carbs": 67,
+      "fat": 12
+    },
+    "allergens": [
+      "fish"
+    ]
+  },
+  {
+    "name": "Roasted duck Bowl",
+    "cuisine": "Asian",
+    "dietary_tags": [
+      "high-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "asparagus",
+      "cabbage",
+      "oats",
+      "eggs"
+    ],
+    "macros": {
+      "calories": 206,
+      "protein": 25,
+      "carbs": 16,
+      "fat": 33
+    },
+    "allergens": [
+      "gluten",
+      "egg"
+    ]
+  },
+  {
+    "name": "Pan-Seared cod Bowl",
+    "cuisine": "Brazilian",
+    "dietary_tags": [
+      "gluten-free",
+      "pescatarian",
+      "low-carb",
+      "high-protein",
+      "dairy-free"
+    ],
+    "ingredients": [
+      "bell peppers",
+      "zucchini",
+      "lentils",
+      "shrimp"
+    ],
+    "macros": {
+      "calories": 333,
+      "protein": 29,
+      "carbs": 57,
+      "fat": 7
+    },
+    "allergens": [
+      "shellfish"
+    ]
+  },
+  {
+    "name": "Slow-Cooked tilapia",
+    "cuisine": "Japanese",
+    "dietary_tags": [
+      "gluten-free",
+      "low-carb",
+      "high-protein"
+    ],
+    "ingredients": [
+      "kale",
+      "cumin",
+      "parmesan",
+      "brussels sprouts",
+      "tofu"
+    ],
+    "macros": {
+      "calories": 556,
+      "protein": 29,
+      "carbs": 48,
+      "fat": 23
+    },
+    "allergens": [
+      "dairy",
+      "soy"
+    ]
+  },
+  {
+    "name": "Spiced duck Bowl",
+    "cuisine": "Chinese",
+    "dietary_tags": [
+      "gluten-free",
+      "pescatarian",
+      "low-carb",
+      "high-protein",
+      "dairy-free"
+    ],
+    "ingredients": [
+      "bell peppers",
+      "shrimp",
+      "cucumbers"
+    ],
+    "macros": {
+      "calories": 496,
+      "protein": 31,
+      "carbs": 40,
+      "fat": 8
+    },
+    "allergens": [
+      "shellfish"
+    ]
+  },
+  {
+    "name": "Pan-Seared halibut",
+    "cuisine": "Chinese",
+    "dietary_tags": [
+      "gluten-free",
+      "high-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "mushrooms",
+      "rice",
+      "tilapia"
+    ],
+    "macros": {
+      "calories": 516,
+      "protein": 31,
+      "carbs": 53,
+      "fat": 22
+    },
+    "allergens": [
+      "fish"
+    ]
+  },
+  {
+    "name": "Slow-Cooked lamb",
+    "cuisine": "Chinese",
+    "dietary_tags": [
+      "gluten-free",
+      "low-carb",
+      "bulking",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "cumin",
+      "salt",
+      "ginger",
+      "tilapia",
+      "bell peppers"
+    ],
+    "macros": {
+      "calories": 561,
+      "protein": 26,
+      "carbs": 80,
+      "fat": 20
+    },
+    "allergens": [
+      "fish"
+    ]
+  },
+  {
+    "name": "Pan-Seared tofu Bowl",
+    "cuisine": "Middle Eastern",
+    "dietary_tags": [
+      "high-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "cutting"
+    ],
+    "ingredients": [
+      "oats",
+      "seitan",
+      "carrots",
+      "lettuce",
+      "paprika"
+    ],
+    "macros": {
+      "calories": 625,
+      "protein": 27,
+      "carbs": 46,
+      "fat": 22
+    },
+    "allergens": [
+      "gluten"
+    ]
+  },
+  {
+    "name": "Stuffed halibut Bowl",
+    "cuisine": "Scandinavian",
+    "dietary_tags": [
+      "dairy-free",
+      "bulking",
+      "high-protein",
+      "high-carb"
+    ],
+    "ingredients": [
+      "pork",
+      "farro",
+      "ginger",
+      "mushrooms",
+      "paprika"
+    ],
+    "macros": {
+      "calories": 708,
+      "protein": 43,
+      "carbs": 40,
+      "fat": 16
+    },
+    "allergens": [
+      "gluten"
+    ]
+  },
+  {
+    "name": "Baked cod Bowl",
+    "cuisine": "Italian",
+    "dietary_tags": [
+      "gluten-free",
+      "low-carb",
+      "high-protein"
+    ],
+    "ingredients": [
+      "parmesan",
+      "tofu",
+      "peanuts"
+    ],
+    "macros": {
+      "calories": 297,
+      "protein": 30,
+      "carbs": 29,
+      "fat": 18
+    },
+    "allergens": [
+      "dairy",
+      "nuts",
+      "soy"
+    ]
+  },
+  {
+    "name": "Layered lamb",
+    "cuisine": "Mediterranean",
+    "dietary_tags": [
+      "gluten-free",
+      "low-carb",
+      "high-protein"
+    ],
+    "ingredients": [
+      "parmesan",
+      "kale",
+      "beef"
+    ],
+    "macros": {
+      "calories": 779,
+      "protein": 43,
+      "carbs": 46,
+      "fat": 17
+    },
+    "allergens": [
+      "dairy"
+    ]
+  },
+  {
+    "name": "Spiced tempeh",
+    "cuisine": "Japanese",
+    "dietary_tags": [
+      "gluten-free",
+      "low-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "yogurt",
+      "cumin",
+      "carrots",
+      "duck",
+      "paprika"
+    ],
+    "macros": {
+      "calories": 554,
+      "protein": 43,
+      "carbs": 79,
+      "fat": 11
+    },
+    "allergens": [
+      "dairy"
+    ]
+  },
+  {
+    "name": "Stuffed seitan",
+    "cuisine": "Lebanese",
+    "dietary_tags": [
+      "high-carb",
+      "bulking",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "black beans",
+      "duck",
+      "flatbread",
+      "paprika"
+    ],
+    "macros": {
+      "calories": 769,
+      "protein": 29,
+      "carbs": 79,
+      "fat": 20
+    },
+    "allergens": [
+      "gluten"
+    ]
+  },
+  {
+    "name": "Baked lamb",
+    "cuisine": "Portuguese",
+    "dietary_tags": [
+      "dairy-free",
+      "pescatarian",
+      "high-protein",
+      "high-carb"
+    ],
+    "ingredients": [
+      "zucchini",
+      "chickpeas",
+      "shrimp",
+      "noodles",
+      "mushrooms"
+    ],
+    "macros": {
+      "calories": 550,
+      "protein": 49,
+      "carbs": 65,
+      "fat": 15
+    },
+    "allergens": [
+      "gluten",
+      "shellfish"
+    ]
+  },
+  {
+    "name": "Golden tempeh",
+    "cuisine": "Japanese",
+    "dietary_tags": [
+      "gluten-free",
+      "low-carb",
+      "high-protein",
+      "keto",
+      "dairy-free",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "bell peppers",
+      "garlic",
+      "salt",
+      "seitan"
+    ],
+    "macros": {
+      "calories": 538,
+      "protein": 29,
+      "carbs": 62,
+      "fat": 17
+    },
+    "allergens": []
+  },
+  {
+    "name": "Roasted eggs",
+    "cuisine": "Asian",
+    "dietary_tags": [
+      "high-protein",
+      "keto",
+      "high-carb"
+    ],
+    "ingredients": [
+      "parmesan",
+      "pasta",
+      "chickpeas",
+      "lettuce",
+      "tofu"
+    ],
+    "macros": {
+      "calories": 768,
+      "protein": 46,
+      "carbs": 70,
+      "fat": 34
+    },
+    "allergens": [
+      "gluten",
+      "dairy",
+      "soy"
+    ]
+  },
+  {
+    "name": "Slow-Cooked shrimp",
+    "cuisine": "Greek",
+    "dietary_tags": [
+      "high-carb",
+      "high-protein",
+      "keto",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "garlic",
+      "lamb",
+      "farro",
+      "mozzarella",
+      "paprika"
+    ],
+    "macros": {
+      "calories": 284,
+      "protein": 23,
+      "carbs": 23,
+      "fat": 30
+    },
+    "allergens": [
+      "gluten",
+      "dairy"
+    ]
+  },
+  {
+    "name": "Layered tofu",
+    "cuisine": "French",
+    "dietary_tags": [
+      "high-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "cutting"
+    ],
+    "ingredients": [
+      "kale",
+      "tempeh",
+      "cucumbers",
+      "couscous",
+      "peanuts"
+    ],
+    "macros": {
+      "calories": 661,
+      "protein": 34,
+      "carbs": 53,
+      "fat": 6
+    },
+    "allergens": [
+      "gluten",
+      "nuts",
+      "soy"
+    ]
+  },
+  {
+    "name": "Layered duck",
+    "cuisine": "African",
+    "dietary_tags": [
+      "high-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "black beans",
+      "garlic",
+      "eggs",
+      "pasta"
+    ],
+    "macros": {
+      "calories": 503,
+      "protein": 34,
+      "carbs": 44,
+      "fat": 11
+    },
+    "allergens": [
+      "gluten",
+      "egg"
+    ]
+  },
+  {
+    "name": "Glazed cod Bowl",
+    "cuisine": "Korean",
+    "dietary_tags": [
+      "gluten-free",
+      "high-carb",
+      "high-protein",
+      "keto",
+      "dairy-free",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "salt",
+      "cumin",
+      "sweet potato",
+      "seitan"
+    ],
+    "macros": {
+      "calories": 519,
+      "protein": 48,
+      "carbs": 41,
+      "fat": 31
+    },
+    "allergens": []
+  },
+  {
+    "name": "Roasted halibut",
+    "cuisine": "Portuguese",
+    "dietary_tags": [
+      "dairy-free",
+      "bulking",
+      "high-protein",
+      "high-carb"
+    ],
+    "ingredients": [
+      "peanuts",
+      "salmon",
+      "pasta"
+    ],
+    "macros": {
+      "calories": 314,
+      "protein": 21,
+      "carbs": 57,
+      "fat": 32
+    },
+    "allergens": [
+      "gluten",
+      "nuts",
+      "fish"
+    ]
+  },
+  {
+    "name": "Crispy pork",
+    "cuisine": "Vietnamese",
+    "dietary_tags": [
+      "dairy-free",
+      "high-protein",
+      "vegetarian",
+      "high-carb"
+    ],
+    "ingredients": [
+      "sesame oil",
+      "oats",
+      "tofu"
+    ],
+    "macros": {
+      "calories": 574,
+      "protein": 36,
+      "carbs": 61,
+      "fat": 31
+    },
+    "allergens": [
+      "gluten",
+      "soy"
+    ]
+  },
+  {
+    "name": "Stuffed pork",
+    "cuisine": "French",
+    "dietary_tags": [
+      "dairy-free",
+      "high-protein",
+      "vegetarian",
+      "high-carb"
+    ],
+    "ingredients": [
+      "noodles",
+      "lentils",
+      "seitan"
+    ],
+    "macros": {
+      "calories": 693,
+      "protein": 33,
+      "carbs": 57,
+      "fat": 9
+    },
+    "allergens": [
+      "gluten"
+    ]
+  },
+  {
+    "name": "Marinated lamb",
+    "cuisine": "Scandinavian",
+    "dietary_tags": [
+      "gluten-free",
+      "low-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "thyme",
+      "beans",
+      "oregano",
+      "eggs",
+      "zucchini"
+    ],
+    "macros": {
+      "calories": 574,
+      "protein": 33,
+      "carbs": 65,
+      "fat": 22
+    },
+    "allergens": [
+      "egg"
+    ]
+  },
+  {
+    "name": "Herb-Infused duck v1",
+    "cuisine": "Lebanese",
+    "dietary_tags": [
+      "dairy-free",
+      "high-protein",
+      "high-carb"
+    ],
+    "ingredients": [
+      "cod",
+      "basil",
+      "barley"
+    ],
+    "macros": {
+      "calories": 453,
+      "protein": 25,
+      "carbs": 56,
+      "fat": 10
+    },
+    "allergens": [
+      "gluten",
+      "fish"
+    ]
+  },
+  {
+    "name": "Slow-Cooked halibut",
+    "cuisine": "American",
+    "dietary_tags": [
+      "gluten-free",
+      "pescatarian",
+      "low-carb",
+      "high-protein",
+      "dairy-free"
+    ],
+    "ingredients": [
+      "bell peppers",
+      "lettuce",
+      "shrimp",
+      "oregano"
+    ],
+    "macros": {
+      "calories": 571,
+      "protein": 28,
+      "carbs": 43,
+      "fat": 28
+    },
+    "allergens": [
+      "shellfish"
+    ]
+  },
+  {
+    "name": "Pan-Seared pork Bowl",
+    "cuisine": "Scandinavian",
+    "dietary_tags": [
+      "gluten-free",
+      "high-protein",
+      "high-carb"
+    ],
+    "ingredients": [
+      "olive oil",
+      "pork",
+      "rice",
+      "corn",
+      "cheese"
+    ],
+    "macros": {
+      "calories": 676,
+      "protein": 30,
+      "carbs": 59,
+      "fat": 6
+    },
+    "allergens": [
+      "dairy"
+    ]
+  },
+  {
+    "name": "Golden turkey",
+    "cuisine": "Asian",
+    "dietary_tags": [
+      "gluten-free",
+      "low-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "chickpeas",
+      "duck",
+      "parmesan"
+    ],
+    "macros": {
+      "calories": 781,
+      "protein": 40,
+      "carbs": 68,
+      "fat": 18
+    },
+    "allergens": [
+      "dairy"
+    ]
+  },
+  {
+    "name": "Crispy tempeh",
+    "cuisine": "Portuguese",
+    "dietary_tags": [
+      "high-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "parmesan",
+      "black beans",
+      "lamb",
+      "oats"
+    ],
+    "macros": {
+      "calories": 505,
+      "protein": 41,
+      "carbs": 72,
+      "fat": 16
+    },
+    "allergens": [
+      "gluten",
+      "dairy"
+    ]
+  },
+  {
+    "name": "Spiced tilapia Bowl",
+    "cuisine": "Chinese",
+    "dietary_tags": [
+      "gluten-free",
+      "low-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "coconut oil",
+      "white beans",
+      "green beans",
+      "cabbage",
+      "eggs"
+    ],
+    "macros": {
+      "calories": 490,
+      "protein": 28,
+      "carbs": 30,
+      "fat": 33
+    },
+    "allergens": [
+      "egg"
+    ]
+  },
+  {
+    "name": "Layered seitan",
+    "cuisine": "French",
+    "dietary_tags": [
+      "gluten-free",
+      "low-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "chickpeas",
+      "lamb",
+      "beans"
+    ],
+    "macros": {
+      "calories": 669,
+      "protein": 42,
+      "carbs": 41,
+      "fat": 32
+    },
+    "allergens": []
+  },
+  {
+    "name": "Grilled chicken Bowl",
+    "cuisine": "Middle Eastern",
+    "dietary_tags": [
+      "gluten-free",
+      "high-carb",
+      "high-protein",
+      "keto",
+      "dairy-free"
+    ],
+    "ingredients": [
+      "kidney beans",
+      "tuna",
+      "tortilla"
+    ],
+    "macros": {
+      "calories": 559,
+      "protein": 30,
+      "carbs": 79,
+      "fat": 22
+    },
+    "allergens": [
+      "fish"
+    ]
+  },
+  {
+    "name": "Charred duck Bowl",
+    "cuisine": "Turkish",
+    "dietary_tags": [
+      "gluten-free",
+      "low-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "ginger",
+      "lentils",
+      "tilapia"
+    ],
+    "macros": {
+      "calories": 701,
+      "protein": 42,
+      "carbs": 49,
+      "fat": 12
+    },
+    "allergens": [
+      "fish"
+    ]
+  },
+  {
+    "name": "Charred tempeh",
+    "cuisine": "Peruvian",
+    "dietary_tags": [
+      "gluten-free",
+      "dairy-free",
+      "high-protein",
+      "high-carb"
+    ],
+    "ingredients": [
+      "beans",
+      "quinoa",
+      "pork",
+      "kidney beans",
+      "celery"
+    ],
+    "macros": {
+      "calories": 725,
+      "protein": 35,
+      "carbs": 41,
+      "fat": 15
+    },
+    "allergens": []
+  },
+  {
+    "name": "Golden shrimp",
+    "cuisine": "Vietnamese",
+    "dietary_tags": [
+      "high-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "bell peppers",
+      "lentils",
+      "lamb",
+      "cabbage",
+      "noodles"
+    ],
+    "macros": {
+      "calories": 220,
+      "protein": 16,
+      "carbs": 22,
+      "fat": 20
+    },
+    "allergens": [
+      "gluten"
+    ]
+  },
+  {
+    "name": "Glazed chicken",
+    "cuisine": "Brazilian",
+    "dietary_tags": [
+      "gluten-free",
+      "low-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "garlic",
+      "halibut",
+      "salt",
+      "eggplant"
+    ],
+    "macros": {
+      "calories": 733,
+      "protein": 39,
+      "carbs": 80,
+      "fat": 8
+    },
+    "allergens": [
+      "fish"
+    ]
+  },
+  {
+    "name": "Pan-Seared tuna Bowl",
+    "cuisine": "Korean",
+    "dietary_tags": [
+      "gluten-free",
+      "low-carb",
+      "high-protein",
+      "keto",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "parmesan",
+      "pepper",
+      "broccoli",
+      "ginger",
+      "eggs"
+    ],
+    "macros": {
+      "calories": 310,
+      "protein": 34,
+      "carbs": 56,
+      "fat": 21
+    },
+    "allergens": [
+      "dairy",
+      "egg"
+    ]
+  },
+  {
+    "name": "Grilled pork",
+    "cuisine": "Asian",
+    "dietary_tags": [
+      "dairy-free",
+      "high-protein",
+      "vegetarian",
+      "high-carb"
+    ],
+    "ingredients": [
+      "coconut oil",
+      "green beans",
+      "seitan",
+      "couscous",
+      "eggplant"
+    ],
+    "macros": {
+      "calories": 587,
+      "protein": 32,
+      "carbs": 70,
+      "fat": 5
+    },
+    "allergens": [
+      "gluten"
+    ]
+  },
+  {
+    "name": "Herb-Infused shrimp",
+    "cuisine": "Chinese",
+    "dietary_tags": [
+      "high-protein",
+      "high-carb"
+    ],
+    "ingredients": [
+      "kale",
+      "tuna",
+      "flatbread",
+      "asparagus",
+      "parmesan"
+    ],
+    "macros": {
+      "calories": 689,
+      "protein": 25,
+      "carbs": 77,
+      "fat": 24
+    },
+    "allergens": [
+      "gluten",
+      "dairy",
+      "fish"
+    ]
+  },
+  {
+    "name": "Crispy tuna Bowl",
+    "cuisine": "Turkish",
+    "dietary_tags": [
+      "high-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "oats",
+      "oregano",
+      "salt",
+      "eggs",
+      "mushrooms"
+    ],
+    "macros": {
+      "calories": 470,
+      "protein": 30,
+      "carbs": 43,
+      "fat": 14
+    },
+    "allergens": [
+      "gluten",
+      "egg"
+    ]
+  },
+  {
+    "name": "Charred beef",
+    "cuisine": "Spanish",
+    "dietary_tags": [
+      "gluten-free",
+      "dairy-free",
+      "low-carb",
+      "high-protein"
+    ],
+    "ingredients": [
+      "carrots",
+      "cod",
+      "onion"
+    ],
+    "macros": {
+      "calories": 209,
+      "protein": 30,
+      "carbs": 38,
+      "fat": 8
+    },
+    "allergens": [
+      "fish"
+    ]
+  },
+  {
+    "name": "Pan-Seared duck Bowl",
+    "cuisine": "Turkish",
+    "dietary_tags": [
+      "gluten-free",
+      "high-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "mozzarella",
+      "lamb",
+      "potato"
+    ],
+    "macros": {
+      "calories": 258,
+      "protein": 28,
+      "carbs": 17,
+      "fat": 7
+    },
+    "allergens": [
+      "dairy"
+    ]
+  },
+  {
+    "name": "Stuffed duck Bowl",
+    "cuisine": "American",
+    "dietary_tags": [
+      "gluten-free",
+      "high-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "zucchini",
+      "lamb",
+      "rice"
+    ],
+    "macros": {
+      "calories": 447,
+      "protein": 20,
+      "carbs": 32,
+      "fat": 29
+    },
+    "allergens": []
+  },
+  {
+    "name": "Baked seitan",
+    "cuisine": "Scandinavian",
+    "dietary_tags": [
+      "gluten-free",
+      "high-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "thyme",
+      "sweet potato",
+      "tilapia"
+    ],
+    "macros": {
+      "calories": 796,
+      "protein": 31,
+      "carbs": 65,
+      "fat": 6
+    },
+    "allergens": [
+      "fish"
+    ]
+  },
+  {
+    "name": "Layered beef Bowl",
+    "cuisine": "French",
+    "dietary_tags": [
+      "gluten-free",
+      "low-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "chickpeas",
+      "mushrooms",
+      "kale",
+      "seitan"
+    ],
+    "macros": {
+      "calories": 348,
+      "protein": 21,
+      "carbs": 56,
+      "fat": 7
+    },
+    "allergens": []
+  },
+  {
+    "name": "Pan-Seared salmon",
+    "cuisine": "Mediterranean",
+    "dietary_tags": [
+      "dairy-free",
+      "high-protein",
+      "high-carb"
+    ],
+    "ingredients": [
+      "bread",
+      "green beans",
+      "salmon",
+      "ginger",
+      "zucchini"
+    ],
+    "macros": {
+      "calories": 474,
+      "protein": 32,
+      "carbs": 51,
+      "fat": 23
+    },
+    "allergens": [
+      "gluten",
+      "fish"
+    ]
+  },
+  {
+    "name": "Stuffed seitan v1",
+    "cuisine": "Korean",
+    "dietary_tags": [
+      "high-protein",
+      "high-carb"
+    ],
+    "ingredients": [
+      "noodles",
+      "mozzarella",
+      "asparagus",
+      "turkey"
+    ],
+    "macros": {
+      "calories": 569,
+      "protein": 27,
+      "carbs": 57,
+      "fat": 25
+    },
+    "allergens": [
+      "gluten",
+      "dairy"
+    ]
+  },
+  {
+    "name": "Herb-Infused tuna Bowl",
+    "cuisine": "Lebanese",
+    "dietary_tags": [
+      "gluten-free",
+      "low-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "kidney beans",
+      "beans",
+      "tofu"
+    ],
+    "macros": {
+      "calories": 750,
+      "protein": 49,
+      "carbs": 70,
+      "fat": 26
+    },
+    "allergens": [
+      "soy"
+    ]
+  },
+  {
+    "name": "Pan-Seared eggs",
+    "cuisine": "Thai",
+    "dietary_tags": [
+      "gluten-free",
+      "dairy-free",
+      "high-protein",
+      "high-carb"
+    ],
+    "ingredients": [
+      "black beans",
+      "chicken",
+      "quinoa"
+    ],
+    "macros": {
+      "calories": 792,
+      "protein": 26,
+      "carbs": 43,
+      "fat": 23
+    },
+    "allergens": []
+  },
+  {
+    "name": "Baked halibut",
+    "cuisine": "Middle Eastern",
+    "dietary_tags": [
+      "gluten-free",
+      "dairy-free",
+      "high-protein",
+      "high-carb"
+    ],
+    "ingredients": [
+      "sesame oil",
+      "salmon",
+      "sweet potato"
+    ],
+    "macros": {
+      "calories": 733,
+      "protein": 27,
+      "carbs": 49,
+      "fat": 34
+    },
+    "allergens": [
+      "fish"
+    ]
+  },
+  {
+    "name": "Grilled shrimp",
+    "cuisine": "Italian",
+    "dietary_tags": [
+      "high-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "basil",
+      "oats",
+      "butter",
+      "broccoli",
+      "halibut"
+    ],
+    "macros": {
+      "calories": 208,
+      "protein": 22,
+      "carbs": 22,
+      "fat": 30
+    },
+    "allergens": [
+      "gluten",
+      "dairy",
+      "fish"
+    ]
+  },
+  {
+    "name": "Charred tofu",
+    "cuisine": "Peruvian",
+    "dietary_tags": [
+      "gluten-free",
+      "dairy-free",
+      "low-carb",
+      "high-protein"
+    ],
+    "ingredients": [
+      "ginger",
+      "sesame oil",
+      "beef",
+      "eggplant"
+    ],
+    "macros": {
+      "calories": 602,
+      "protein": 40,
+      "carbs": 63,
+      "fat": 23
+    },
+    "allergens": []
+  },
+  {
+    "name": "Marinated shrimp Bowl",
+    "cuisine": "Korean",
+    "dietary_tags": [
+      "gluten-free",
+      "high-protein",
+      "high-carb"
+    ],
+    "ingredients": [
+      "tuna",
+      "chickpeas",
+      "corn",
+      "sweet potato",
+      "cheese"
+    ],
+    "macros": {
+      "calories": 625,
+      "protein": 40,
+      "carbs": 58,
+      "fat": 35
+    },
+    "allergens": [
+      "dairy",
+      "fish"
+    ]
+  },
+  {
+    "name": "Pan-Seared pork",
+    "cuisine": "Turkish",
+    "dietary_tags": [
+      "high-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "lamb",
+      "cheese",
+      "pasta"
+    ],
+    "macros": {
+      "calories": 601,
+      "protein": 47,
+      "carbs": 73,
+      "fat": 35
+    },
+    "allergens": [
+      "gluten",
+      "dairy"
+    ]
+  },
+  {
+    "name": "Charred tofu Bowl",
+    "cuisine": "Indian",
+    "dietary_tags": [
+      "gluten-free",
+      "high-carb",
+      "bulking",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "peanuts",
+      "tilapia",
+      "kidney beans",
+      "paprika",
+      "tortilla"
+    ],
+    "macros": {
+      "calories": 715,
+      "protein": 26,
+      "carbs": 69,
+      "fat": 33
+    },
+    "allergens": [
+      "nuts",
+      "fish"
+    ]
+  },
+  {
+    "name": "Layered turkey Bowl",
+    "cuisine": "Indian",
+    "dietary_tags": [
+      "gluten-free",
+      "low-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "asparagus",
+      "lamb",
+      "cucumbers",
+      "eggplant"
+    ],
+    "macros": {
+      "calories": 745,
+      "protein": 31,
+      "carbs": 61,
+      "fat": 27
+    },
+    "allergens": []
+  },
+  {
+    "name": "Marinated pork",
+    "cuisine": "Thai",
+    "dietary_tags": [
+      "high-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "kidney beans",
+      "farro",
+      "paprika",
+      "bell peppers",
+      "halibut"
+    ],
+    "macros": {
+      "calories": 754,
+      "protein": 44,
+      "carbs": 59,
+      "fat": 29
+    },
+    "allergens": [
+      "gluten",
+      "fish"
+    ]
+  },
+  {
+    "name": "Stuffed halibut",
+    "cuisine": "Spanish",
+    "dietary_tags": [
+      "gluten-free",
+      "pescatarian",
+      "low-carb",
+      "high-protein",
+      "dairy-free"
+    ],
+    "ingredients": [
+      "kidney beans",
+      "peas",
+      "shrimp",
+      "oregano"
+    ],
+    "macros": {
+      "calories": 495,
+      "protein": 29,
+      "carbs": 47,
+      "fat": 31
+    },
+    "allergens": [
+      "shellfish"
+    ]
+  },
+  {
+    "name": "Roasted tilapia",
+    "cuisine": "Brazilian",
+    "dietary_tags": [
+      "gluten-free",
+      "high-carb",
+      "bulking",
+      "high-protein",
+      "dairy-free"
+    ],
+    "ingredients": [
+      "brussels sprouts",
+      "garlic",
+      "rice",
+      "black beans",
+      "chicken"
+    ],
+    "macros": {
+      "calories": 369,
+      "protein": 28,
+      "carbs": 45,
+      "fat": 21
+    },
+    "allergens": []
+  },
+  {
+    "name": "Pan-Seared pork v1",
+    "cuisine": "German",
+    "dietary_tags": [
+      "high-carb",
+      "bulking",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "bread",
+      "mozzarella",
+      "halibut",
+      "basil"
+    ],
+    "macros": {
+      "calories": 778,
+      "protein": 35,
+      "carbs": 46,
+      "fat": 22
+    },
+    "allergens": [
+      "gluten",
+      "dairy",
+      "fish"
+    ]
+  },
+  {
+    "name": "Pan-Seared tofu",
+    "cuisine": "Asian",
+    "dietary_tags": [
+      "gluten-free",
+      "low-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan",
+      "cutting"
+    ],
+    "ingredients": [
+      "chickpeas",
+      "eggplant",
+      "tilapia"
+    ],
+    "macros": {
+      "calories": 669,
+      "protein": 40,
+      "carbs": 77,
+      "fat": 33
+    },
+    "allergens": [
+      "fish"
+    ]
+  },
+  {
+    "name": "Slow-Cooked tilapia v1",
+    "cuisine": "Greek",
+    "dietary_tags": [
+      "high-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "noodles",
+      "duck",
+      "salt"
+    ],
+    "macros": {
+      "calories": 280,
+      "protein": 15,
+      "carbs": 32,
+      "fat": 9
+    },
+    "allergens": [
+      "gluten"
+    ]
+  },
+  {
+    "name": "Roasted tilapia v1",
+    "cuisine": "Vietnamese",
+    "dietary_tags": [
+      "gluten-free",
+      "high-protein",
+      "high-carb"
+    ],
+    "ingredients": [
+      "parmesan",
+      "tortilla",
+      "salmon"
+    ],
+    "macros": {
+      "calories": 454,
+      "protein": 29,
+      "carbs": 30,
+      "fat": 29
+    },
+    "allergens": [
+      "dairy",
+      "fish"
+    ]
+  },
+  {
+    "name": "Spiced shrimp",
+    "cuisine": "American",
+    "dietary_tags": [
+      "gluten-free",
+      "high-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "cabbage",
+      "tempeh",
+      "sweet potato"
+    ],
+    "macros": {
+      "calories": 491,
+      "protein": 27,
+      "carbs": 55,
+      "fat": 7
+    },
+    "allergens": [
+      "soy"
+    ]
+  },
+  {
+    "name": "Marinated chicken Bowl",
+    "cuisine": "Greek",
+    "dietary_tags": [
+      "high-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "corn",
+      "paprika",
+      "oats",
+      "tilapia"
+    ],
+    "macros": {
+      "calories": 458,
+      "protein": 29,
+      "carbs": 50,
+      "fat": 30
+    },
+    "allergens": [
+      "gluten",
+      "fish"
+    ]
+  },
+  {
+    "name": "Glazed lamb Bowl",
+    "cuisine": "American",
+    "dietary_tags": [
+      "gluten-free",
+      "high-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "halibut",
+      "yogurt",
+      "rice",
+      "beans"
+    ],
+    "macros": {
+      "calories": 660,
+      "protein": 27,
+      "carbs": 47,
+      "fat": 17
+    },
+    "allergens": [
+      "dairy",
+      "fish"
+    ]
+  },
+  {
+    "name": "Glazed tilapia Bowl",
+    "cuisine": "Scandinavian",
+    "dietary_tags": [
+      "high-protein",
+      "high-carb"
+    ],
+    "ingredients": [
+      "parmesan",
+      "cod",
+      "flatbread"
+    ],
+    "macros": {
+      "calories": 308,
+      "protein": 20,
+      "carbs": 44,
+      "fat": 15
+    },
+    "allergens": [
+      "gluten",
+      "dairy",
+      "fish"
+    ]
+  },
+  {
+    "name": "Slow-Cooked tilapia v2",
+    "cuisine": "Vietnamese",
+    "dietary_tags": [
+      "high-protein",
+      "high-carb"
+    ],
+    "ingredients": [
+      "noodles",
+      "cod",
+      "beans",
+      "parmesan"
+    ],
+    "macros": {
+      "calories": 295,
+      "protein": 16,
+      "carbs": 32,
+      "fat": 27
+    },
+    "allergens": [
+      "gluten",
+      "dairy",
+      "fish"
+    ]
+  },
+  {
+    "name": "Baked tempeh Bowl",
+    "cuisine": "Vietnamese",
+    "dietary_tags": [
+      "dairy-free",
+      "high-protein",
+      "high-carb"
+    ],
+    "ingredients": [
+      "zucchini",
+      "turkey",
+      "pasta"
+    ],
+    "macros": {
+      "calories": 245,
+      "protein": 26,
+      "carbs": 24,
+      "fat": 16
+    },
+    "allergens": [
+      "gluten"
+    ]
+  },
+  {
+    "name": "Grilled tuna",
+    "cuisine": "Brazilian",
+    "dietary_tags": [
+      "gluten-free",
+      "high-carb",
+      "bulking",
+      "high-protein",
+      "dairy-free"
+    ],
+    "ingredients": [
+      "lentils",
+      "spinach",
+      "rice",
+      "pork"
+    ],
+    "macros": {
+      "calories": 651,
+      "protein": 48,
+      "carbs": 51,
+      "fat": 11
+    },
+    "allergens": []
+  },
+  {
+    "name": "Stuffed eggs Bowl",
+    "cuisine": "Mediterranean",
+    "dietary_tags": [
+      "dairy-free",
+      "high-protein",
+      "vegetarian",
+      "high-carb"
+    ],
+    "ingredients": [
+      "bread",
+      "mushrooms",
+      "seitan"
+    ],
+    "macros": {
+      "calories": 272,
+      "protein": 21,
+      "carbs": 27,
+      "fat": 6
+    },
+    "allergens": [
+      "gluten"
+    ]
+  },
+  {
+    "name": "Roasted duck Bowl v1",
+    "cuisine": "Brazilian",
+    "dietary_tags": [
+      "gluten-free",
+      "dairy-free",
+      "low-carb",
+      "high-protein"
+    ],
+    "ingredients": [
+      "olive oil",
+      "beef",
+      "eggplant"
+    ],
+    "macros": {
+      "calories": 677,
+      "protein": 48,
+      "carbs": 73,
+      "fat": 31
+    },
+    "allergens": []
+  },
+  {
+    "name": "Tender eggs",
+    "cuisine": "Asian",
+    "dietary_tags": [
+      "gluten-free",
+      "low-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "tempeh",
+      "carrots",
+      "black beans",
+      "celery",
+      "paprika"
+    ],
+    "macros": {
+      "calories": 527,
+      "protein": 50,
+      "carbs": 41,
+      "fat": 33
+    },
+    "allergens": [
+      "soy"
+    ]
+  },
+  {
+    "name": "Golden pork Bowl",
+    "cuisine": "Lebanese",
+    "dietary_tags": [
+      "gluten-free",
+      "high-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "cutting"
+    ],
+    "ingredients": [
+      "green beans",
+      "oregano",
+      "tempeh",
+      "tortilla",
+      "tomatoes"
+    ],
+    "macros": {
+      "calories": 377,
+      "protein": 34,
+      "carbs": 42,
+      "fat": 14
+    },
+    "allergens": [
+      "soy"
+    ]
+  },
+  {
+    "name": "Roasted tilapia v2",
+    "cuisine": "Japanese",
+    "dietary_tags": [
+      "gluten-free",
+      "high-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "kidney beans",
+      "sweet potato",
+      "seitan"
+    ],
+    "macros": {
+      "calories": 431,
+      "protein": 20,
+      "carbs": 33,
+      "fat": 25
+    },
+    "allergens": []
+  },
+  {
+    "name": "Charred salmon",
+    "cuisine": "Japanese",
+    "dietary_tags": [
+      "gluten-free",
+      "high-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "bell peppers",
+      "quinoa",
+      "tofu"
+    ],
+    "macros": {
+      "calories": 318,
+      "protein": 35,
+      "carbs": 47,
+      "fat": 20
+    },
+    "allergens": [
+      "soy"
+    ]
+  },
+  {
+    "name": "Spiced lamb Bowl",
+    "cuisine": "Greek",
+    "dietary_tags": [
+      "dairy-free",
+      "high-protein",
+      "vegetarian",
+      "high-carb"
+    ],
+    "ingredients": [
+      "bread",
+      "beans",
+      "tempeh",
+      "kidney beans",
+      "black beans"
+    ],
+    "macros": {
+      "calories": 489,
+      "protein": 30,
+      "carbs": 35,
+      "fat": 23
+    },
+    "allergens": [
+      "gluten",
+      "soy"
+    ]
+  },
+  {
+    "name": "Spiced tofu Bowl",
+    "cuisine": "Scandinavian",
+    "dietary_tags": [
+      "gluten-free",
+      "low-carb",
+      "bulking",
+      "high-protein",
+      "dairy-free"
+    ],
+    "ingredients": [
+      "chickpeas",
+      "carrots",
+      "pork",
+      "cucumbers"
+    ],
+    "macros": {
+      "calories": 413,
+      "protein": 34,
+      "carbs": 48,
+      "fat": 19
+    },
+    "allergens": []
+  },
+  {
+    "name": "Grilled tilapia",
+    "cuisine": "Asian",
+    "dietary_tags": [
+      "gluten-free",
+      "dairy-free",
+      "high-protein",
+      "high-carb"
+    ],
+    "ingredients": [
+      "corn",
+      "beef",
+      "potato"
+    ],
+    "macros": {
+      "calories": 443,
+      "protein": 29,
+      "carbs": 52,
+      "fat": 21
+    },
+    "allergens": []
+  },
+  {
+    "name": "Roasted tempeh",
+    "cuisine": "Turkish",
+    "dietary_tags": [
+      "dairy-free",
+      "high-protein",
+      "vegetarian",
+      "high-carb"
+    ],
+    "ingredients": [
+      "ginger",
+      "cucumbers",
+      "tofu",
+      "flatbread"
+    ],
+    "macros": {
+      "calories": 243,
+      "protein": 18,
+      "carbs": 28,
+      "fat": 27
+    },
+    "allergens": [
+      "gluten",
+      "soy"
+    ]
+  },
+  {
+    "name": "Glazed duck Bowl",
+    "cuisine": "Middle Eastern",
+    "dietary_tags": [
+      "dairy-free",
+      "high-protein",
+      "high-carb"
+    ],
+    "ingredients": [
+      "cucumbers",
+      "pork",
+      "barley"
+    ],
+    "macros": {
+      "calories": 492,
+      "protein": 34,
+      "carbs": 31,
+      "fat": 12
+    },
+    "allergens": [
+      "gluten"
+    ]
+  },
+  {
+    "name": "Glazed halibut Bowl",
+    "cuisine": "Asian",
+    "dietary_tags": [
+      "dairy-free",
+      "high-protein",
+      "cutting",
+      "high-carb"
+    ],
+    "ingredients": [
+      "olive oil",
+      "basil",
+      "farro",
+      "salt",
+      "chicken"
+    ],
+    "macros": {
+      "calories": 652,
+      "protein": 42,
+      "carbs": 51,
+      "fat": 26
+    },
+    "allergens": [
+      "gluten"
+    ]
+  },
+  {
+    "name": "Roasted halibut v1",
+    "cuisine": "Middle Eastern",
+    "dietary_tags": [
+      "gluten-free",
+      "low-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "yogurt",
+      "garlic",
+      "lamb",
+      "ginger",
+      "cabbage"
+    ],
+    "macros": {
+      "calories": 441,
+      "protein": 21,
+      "carbs": 53,
+      "fat": 30
+    },
+    "allergens": [
+      "dairy"
+    ]
+  },
+  {
+    "name": "Marinated tilapia Bowl",
+    "cuisine": "Korean",
+    "dietary_tags": [
+      "high-carb",
+      "high-protein",
+      "keto",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "parmesan",
+      "halibut",
+      "barley",
+      "eggplant"
+    ],
+    "macros": {
+      "calories": 230,
+      "protein": 29,
+      "carbs": 34,
+      "fat": 5
+    },
+    "allergens": [
+      "gluten",
+      "dairy",
+      "fish"
+    ]
+  },
+  {
+    "name": "Stuffed beef",
+    "cuisine": "Scandinavian",
+    "dietary_tags": [
+      "gluten-free",
+      "dairy-free",
+      "low-carb",
+      "high-protein"
+    ],
+    "ingredients": [
+      "kidney beans",
+      "mushrooms",
+      "chicken",
+      "peanuts"
+    ],
+    "macros": {
+      "calories": 749,
+      "protein": 41,
+      "carbs": 56,
+      "fat": 16
+    },
+    "allergens": [
+      "nuts"
+    ]
+  },
+  {
+    "name": "Stuffed turkey Bowl",
+    "cuisine": "Asian",
+    "dietary_tags": [
+      "dairy-free",
+      "high-protein",
+      "high-carb"
+    ],
+    "ingredients": [
+      "thyme",
+      "beans",
+      "tuna",
+      "flatbread",
+      "eggplant"
+    ],
+    "macros": {
+      "calories": 276,
+      "protein": 28,
+      "carbs": 27,
+      "fat": 17
+    },
+    "allergens": [
+      "gluten",
+      "fish"
+    ]
+  },
+  {
+    "name": "Golden duck",
+    "cuisine": "Indian",
+    "dietary_tags": [
+      "gluten-free",
+      "high-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "turmeric",
+      "duck",
+      "quinoa"
+    ],
+    "macros": {
+      "calories": 408,
+      "protein": 28,
+      "carbs": 50,
+      "fat": 17
+    },
+    "allergens": []
+  },
+  {
+    "name": "Layered halibut",
+    "cuisine": "Spanish",
+    "dietary_tags": [
+      "dairy-free",
+      "high-protein",
+      "high-carb"
+    ],
+    "ingredients": [
+      "bread",
+      "thyme",
+      "tuna"
+    ],
+    "macros": {
+      "calories": 720,
+      "protein": 42,
+      "carbs": 51,
+      "fat": 9
+    },
+    "allergens": [
+      "gluten",
+      "fish"
+    ]
+  },
+  {
+    "name": "Roasted tilapia v3",
+    "cuisine": "Spanish",
+    "dietary_tags": [
+      "gluten-free",
+      "high-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "quinoa",
+      "parmesan",
+      "ginger",
+      "cabbage",
+      "eggs"
+    ],
+    "macros": {
+      "calories": 499,
+      "protein": 20,
+      "carbs": 60,
+      "fat": 14
+    },
+    "allergens": [
+      "dairy",
+      "egg"
+    ]
+  },
+  {
+    "name": "Charred tofu Bowl v1",
+    "cuisine": "Scandinavian",
+    "dietary_tags": [
+      "high-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "asparagus",
+      "farro",
+      "ginger",
+      "turmeric",
+      "tilapia"
+    ],
+    "macros": {
+      "calories": 736,
+      "protein": 49,
+      "carbs": 48,
+      "fat": 9
+    },
+    "allergens": [
+      "gluten",
+      "fish"
+    ]
+  },
+  {
+    "name": "Spiced lamb",
+    "cuisine": "Middle Eastern",
+    "dietary_tags": [
+      "gluten-free",
+      "low-carb",
+      "high-protein",
+      "keto",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "lentils",
+      "garlic",
+      "lamb",
+      "butter",
+      "eggplant"
+    ],
+    "macros": {
+      "calories": 760,
+      "protein": 50,
+      "carbs": 80,
+      "fat": 21
+    },
+    "allergens": [
+      "dairy"
+    ]
+  },
+  {
+    "name": "Grilled halibut",
+    "cuisine": "Middle Eastern",
+    "dietary_tags": [
+      "gluten-free",
+      "high-protein",
+      "cutting",
+      "high-carb"
+    ],
+    "ingredients": [
+      "mushrooms",
+      "tuna",
+      "tortilla",
+      "butter"
+    ],
+    "macros": {
+      "calories": 736,
+      "protein": 31,
+      "carbs": 51,
+      "fat": 19
+    },
+    "allergens": [
+      "dairy",
+      "fish"
+    ]
+  },
+  {
+    "name": "Marinated tuna",
+    "cuisine": "British",
+    "dietary_tags": [
+      "gluten-free",
+      "high-carb",
+      "bulking",
+      "high-protein",
+      "dairy-free"
+    ],
+    "ingredients": [
+      "corn",
+      "cabbage",
+      "rice",
+      "turkey"
+    ],
+    "macros": {
+      "calories": 716,
+      "protein": 26,
+      "carbs": 54,
+      "fat": 31
+    },
+    "allergens": []
+  },
+  {
+    "name": "Layered lamb Bowl",
+    "cuisine": "Indian",
+    "dietary_tags": [
+      "gluten-free",
+      "high-protein",
+      "high-carb"
+    ],
+    "ingredients": [
+      "coconut oil",
+      "beans",
+      "tempeh",
+      "potato",
+      "cheese"
+    ],
+    "macros": {
+      "calories": 591,
+      "protein": 28,
+      "carbs": 48,
+      "fat": 32
+    },
+    "allergens": [
+      "dairy",
+      "soy"
+    ]
+  },
+  {
+    "name": "Spiced tempeh v1",
+    "cuisine": "Spanish",
+    "dietary_tags": [
+      "gluten-free",
+      "low-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "garlic",
+      "paprika",
+      "tofu"
+    ],
+    "macros": {
+      "calories": 311,
+      "protein": 24,
+      "carbs": 33,
+      "fat": 31
+    },
+    "allergens": [
+      "soy"
+    ]
+  },
+  {
+    "name": "Baked duck Bowl",
+    "cuisine": "Italian",
+    "dietary_tags": [
+      "gluten-free",
+      "low-carb",
+      "high-protein"
+    ],
+    "ingredients": [
+      "carrots",
+      "milk",
+      "tempeh",
+      "tomatoes"
+    ],
+    "macros": {
+      "calories": 285,
+      "protein": 26,
+      "carbs": 32,
+      "fat": 22
+    },
+    "allergens": [
+      "dairy",
+      "soy"
+    ]
+  },
+  {
+    "name": "Golden halibut Bowl",
+    "cuisine": "Vietnamese",
+    "dietary_tags": [
+      "high-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "noodles",
+      "peas",
+      "duck",
+      "onion"
+    ],
+    "macros": {
+      "calories": 351,
+      "protein": 20,
+      "carbs": 56,
+      "fat": 33
+    },
+    "allergens": [
+      "gluten"
+    ]
+  },
+  {
+    "name": "Baked tuna",
+    "cuisine": "French",
+    "dietary_tags": [
+      "gluten-free",
+      "high-carb",
+      "high-protein",
+      "keto",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "parmesan",
+      "cucumbers",
+      "duck",
+      "sweet potato",
+      "bell peppers"
+    ],
+    "macros": {
+      "calories": 246,
+      "protein": 28,
+      "carbs": 27,
+      "fat": 25
+    },
+    "allergens": [
+      "dairy"
+    ]
+  },
+  {
+    "name": "Slow-Cooked beef",
+    "cuisine": "Spanish",
+    "dietary_tags": [
+      "high-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "bread",
+      "brussels sprouts",
+      "duck"
+    ],
+    "macros": {
+      "calories": 504,
+      "protein": 27,
+      "carbs": 49,
+      "fat": 8
+    },
+    "allergens": [
+      "gluten"
+    ]
+  },
+  {
+    "name": "Marinated cod Bowl",
+    "cuisine": "Japanese",
+    "dietary_tags": [
+      "dairy-free",
+      "high-protein",
+      "high-carb"
+    ],
+    "ingredients": [
+      "bread",
+      "paprika",
+      "salmon"
+    ],
+    "macros": {
+      "calories": 675,
+      "protein": 34,
+      "carbs": 77,
+      "fat": 9
+    },
+    "allergens": [
+      "gluten",
+      "fish"
+    ]
+  },
+  {
+    "name": "Charred tilapia",
+    "cuisine": "Japanese",
+    "dietary_tags": [
+      "gluten-free",
+      "low-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "olive oil",
+      "tempeh",
+      "eggplant"
+    ],
+    "macros": {
+      "calories": 738,
+      "protein": 49,
+      "carbs": 51,
+      "fat": 13
+    },
+    "allergens": [
+      "soy"
+    ]
+  },
+  {
+    "name": "Layered duck v1",
+    "cuisine": "Vietnamese",
+    "dietary_tags": [
+      "gluten-free",
+      "high-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "mozzarella",
+      "lamb",
+      "quinoa"
+    ],
+    "macros": {
+      "calories": 511,
+      "protein": 44,
+      "carbs": 53,
+      "fat": 9
+    },
+    "allergens": [
+      "dairy"
+    ]
+  },
+  {
+    "name": "Spiced tilapia Bowl v1",
+    "cuisine": "British",
+    "dietary_tags": [
+      "gluten-free",
+      "low-carb",
+      "bulking",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "thyme",
+      "corn",
+      "tilapia",
+      "paprika",
+      "eggplant"
+    ],
+    "macros": {
+      "calories": 758,
+      "protein": 47,
+      "carbs": 74,
+      "fat": 32
+    },
+    "allergens": [
+      "fish"
+    ]
+  },
+  {
+    "name": "Marinated turkey",
+    "cuisine": "Brazilian",
+    "dietary_tags": [
+      "gluten-free",
+      "high-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "spinach",
+      "tempeh",
+      "sweet potato"
+    ],
+    "macros": {
+      "calories": 688,
+      "protein": 35,
+      "carbs": 45,
+      "fat": 22
+    },
+    "allergens": [
+      "soy"
+    ]
+  },
+  {
+    "name": "Tender pork Bowl",
+    "cuisine": "French",
+    "dietary_tags": [
+      "high-protein",
+      "high-carb"
+    ],
+    "ingredients": [
+      "milk",
+      "chicken",
+      "pasta"
+    ],
+    "macros": {
+      "calories": 230,
+      "protein": 24,
+      "carbs": 35,
+      "fat": 20
+    },
+    "allergens": [
+      "gluten",
+      "dairy"
+    ]
+  },
+  {
+    "name": "Crispy tofu",
+    "cuisine": "Asian",
+    "dietary_tags": [
+      "gluten-free",
+      "high-carb",
+      "high-protein",
+      "keto",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "asparagus",
+      "halibut",
+      "bell peppers",
+      "potato"
+    ],
+    "macros": {
+      "calories": 295,
+      "protein": 17,
+      "carbs": 40,
+      "fat": 5
+    },
+    "allergens": [
+      "fish"
+    ]
+  },
+  {
+    "name": "Marinated duck Bowl",
+    "cuisine": "Lebanese",
+    "dietary_tags": [
+      "gluten-free",
+      "dairy-free",
+      "high-protein",
+      "high-carb"
+    ],
+    "ingredients": [
+      "peas",
+      "lentils",
+      "pepper",
+      "turkey",
+      "sweet potato"
+    ],
+    "macros": {
+      "calories": 702,
+      "protein": 40,
+      "carbs": 74,
+      "fat": 6
+    },
+    "allergens": []
+  },
+  {
+    "name": "Glazed shrimp Bowl",
+    "cuisine": "Korean",
+    "dietary_tags": [
+      "bulking",
+      "high-protein",
+      "high-carb"
+    ],
+    "ingredients": [
+      "white beans",
+      "butter",
+      "couscous",
+      "peanuts",
+      "turkey"
+    ],
+    "macros": {
+      "calories": 309,
+      "protein": 33,
+      "carbs": 56,
+      "fat": 27
+    },
+    "allergens": [
+      "gluten",
+      "dairy",
+      "nuts"
+    ]
+  },
+  {
+    "name": "Golden beef",
+    "cuisine": "Peruvian",
+    "dietary_tags": [
+      "gluten-free",
+      "low-carb",
+      "high-protein",
+      "keto",
+      "dairy-free"
+    ],
+    "ingredients": [
+      "coconut oil",
+      "pepper",
+      "olive oil",
+      "chicken"
+    ],
+    "macros": {
+      "calories": 291,
+      "protein": 21,
+      "carbs": 39,
+      "fat": 27
+    },
+    "allergens": []
+  },
+  {
+    "name": "Layered duck v2",
+    "cuisine": "African",
+    "dietary_tags": [
+      "high-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "couscous",
+      "duck",
+      "cream",
+      "brussels sprouts"
+    ],
+    "macros": {
+      "calories": 756,
+      "protein": 28,
+      "carbs": 56,
+      "fat": 20
+    },
+    "allergens": [
+      "gluten",
+      "dairy"
+    ]
+  },
+  {
+    "name": "Baked salmon Bowl",
+    "cuisine": "Lebanese",
+    "dietary_tags": [
+      "dairy-free",
+      "pescatarian",
+      "high-protein",
+      "high-carb"
+    ],
+    "ingredients": [
+      "kale",
+      "cumin",
+      "farro",
+      "ginger",
+      "shrimp"
+    ],
+    "macros": {
+      "calories": 682,
+      "protein": 44,
+      "carbs": 67,
+      "fat": 15
+    },
+    "allergens": [
+      "gluten",
+      "shellfish"
+    ]
+  },
+  {
+    "name": "Stuffed salmon",
+    "cuisine": "Scandinavian",
+    "dietary_tags": [
+      "high-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "barley",
+      "turmeric",
+      "carrots",
+      "tilapia",
+      "eggplant"
+    ],
+    "macros": {
+      "calories": 751,
+      "protein": 25,
+      "carbs": 41,
+      "fat": 17
+    },
+    "allergens": [
+      "gluten",
+      "fish"
+    ]
+  },
+  {
+    "name": "Slow-Cooked eggs",
+    "cuisine": "French",
+    "dietary_tags": [
+      "gluten-free",
+      "dairy-free",
+      "low-carb",
+      "high-protein"
+    ],
+    "ingredients": [
+      "chickpeas",
+      "corn",
+      "cod",
+      "tomatoes"
+    ],
+    "macros": {
+      "calories": 714,
+      "protein": 43,
+      "carbs": 40,
+      "fat": 31
+    },
+    "allergens": [
+      "fish"
+    ]
+  },
+  {
+    "name": "Pan-Seared lamb",
+    "cuisine": "Lebanese",
+    "dietary_tags": [
+      "gluten-free",
+      "high-carb",
+      "high-protein",
+      "dairy-free",
+      "cutting"
+    ],
+    "ingredients": [
+      "kidney beans",
+      "tortilla",
+      "salmon"
+    ],
+    "macros": {
+      "calories": 323,
+      "protein": 24,
+      "carbs": 31,
+      "fat": 34
+    },
+    "allergens": [
+      "fish"
+    ]
+  },
+  {
+    "name": "Glazed tilapia Bowl v1",
+    "cuisine": "Korean",
+    "dietary_tags": [
+      "gluten-free",
+      "pescatarian",
+      "low-carb",
+      "high-protein",
+      "keto"
+    ],
+    "ingredients": [
+      "asparagus",
+      "parmesan",
+      "shrimp",
+      "cucumbers"
+    ],
+    "macros": {
+      "calories": 287,
+      "protein": 21,
+      "carbs": 20,
+      "fat": 7
+    },
+    "allergens": [
+      "dairy",
+      "shellfish"
+    ]
+  },
+  {
+    "name": "Marinated shrimp",
+    "cuisine": "American",
+    "dietary_tags": [
+      "high-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "kale",
+      "parmesan",
+      "couscous",
+      "peanuts",
+      "halibut"
+    ],
+    "macros": {
+      "calories": 564,
+      "protein": 32,
+      "carbs": 41,
+      "fat": 12
+    },
+    "allergens": [
+      "gluten",
+      "dairy",
+      "nuts",
+      "fish"
+    ]
+  },
+  {
+    "name": "Tender eggs v1",
+    "cuisine": "Peruvian",
+    "dietary_tags": [
+      "high-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "milk",
+      "yogurt",
+      "cucumbers",
+      "pasta",
+      "halibut"
+    ],
+    "macros": {
+      "calories": 682,
+      "protein": 31,
+      "carbs": 51,
+      "fat": 9
+    },
+    "allergens": [
+      "gluten",
+      "dairy",
+      "fish"
+    ]
+  },
+  {
+    "name": "Slow-Cooked chicken",
+    "cuisine": "Middle Eastern",
+    "dietary_tags": [
+      "high-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "turmeric",
+      "farro",
+      "eggs",
+      "cumin"
+    ],
+    "macros": {
+      "calories": 351,
+      "protein": 22,
+      "carbs": 40,
+      "fat": 12
+    },
+    "allergens": [
+      "gluten",
+      "egg"
+    ]
+  },
+  {
+    "name": "Pan-Seared tilapia",
+    "cuisine": "Scandinavian",
+    "dietary_tags": [
+      "dairy-free",
+      "high-protein",
+      "high-carb"
+    ],
+    "ingredients": [
+      "noodles",
+      "kale",
+      "cod"
+    ],
+    "macros": {
+      "calories": 640,
+      "protein": 47,
+      "carbs": 57,
+      "fat": 9
+    },
+    "allergens": [
+      "gluten",
+      "fish"
+    ]
+  },
+  {
+    "name": "Roasted tempeh v1",
+    "cuisine": "Japanese",
+    "dietary_tags": [
+      "dairy-free",
+      "high-protein",
+      "high-carb"
+    ],
+    "ingredients": [
+      "asparagus",
+      "paprika",
+      "oats",
+      "pork"
+    ],
+    "macros": {
+      "calories": 336,
+      "protein": 26,
+      "carbs": 58,
+      "fat": 31
+    },
+    "allergens": [
+      "gluten"
+    ]
+  },
+  {
+    "name": "Crispy duck",
+    "cuisine": "Asian",
+    "dietary_tags": [
+      "dairy-free",
+      "pescatarian",
+      "high-protein",
+      "high-carb"
+    ],
+    "ingredients": [
+      "barley",
+      "corn",
+      "shrimp",
+      "onion",
+      "celery"
+    ],
+    "macros": {
+      "calories": 328,
+      "protein": 24,
+      "carbs": 48,
+      "fat": 8
+    },
+    "allergens": [
+      "gluten",
+      "shellfish"
+    ]
+  },
+  {
+    "name": "Grilled seitan",
+    "cuisine": "Korean",
+    "dietary_tags": [
+      "gluten-free",
+      "high-carb",
+      "high-protein",
+      "keto",
+      "dairy-free",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "brussels sprouts",
+      "oregano",
+      "tortilla",
+      "seitan"
+    ],
+    "macros": {
+      "calories": 532,
+      "protein": 45,
+      "carbs": 42,
+      "fat": 32
+    },
+    "allergens": []
+  },
+  {
+    "name": "Marinated tilapia",
+    "cuisine": "German",
+    "dietary_tags": [
+      "gluten-free",
+      "high-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "carrots",
+      "broccoli",
+      "tortilla",
+      "eggs"
+    ],
+    "macros": {
+      "calories": 210,
+      "protein": 20,
+      "carbs": 22,
+      "fat": 12
+    },
+    "allergens": [
+      "egg"
+    ]
+  },
+  {
+    "name": "Charred eggs Bowl",
+    "cuisine": "Turkish",
+    "dietary_tags": [
+      "gluten-free",
+      "high-carb",
+      "high-protein",
+      "keto",
+      "dairy-free"
+    ],
+    "ingredients": [
+      "oregano",
+      "turkey",
+      "sweet potato"
+    ],
+    "macros": {
+      "calories": 400,
+      "protein": 22,
+      "carbs": 47,
+      "fat": 14
+    },
+    "allergens": []
+  },
+  {
+    "name": "Slow-Cooked halibut v1",
+    "cuisine": "Brazilian",
+    "dietary_tags": [
+      "gluten-free",
+      "high-protein",
+      "cutting",
+      "high-carb"
+    ],
+    "ingredients": [
+      "cod",
+      "yogurt",
+      "potato"
+    ],
+    "macros": {
+      "calories": 593,
+      "protein": 27,
+      "carbs": 53,
+      "fat": 22
+    },
+    "allergens": [
+      "dairy",
+      "fish"
+    ]
+  },
+  {
+    "name": "Pan-Seared halibut Bowl",
+    "cuisine": "Thai",
+    "dietary_tags": [
+      "high-carb",
+      "bulking",
+      "high-protein",
+      "dairy-free",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "kidney beans",
+      "oats",
+      "tofu",
+      "broccoli"
+    ],
+    "macros": {
+      "calories": 612,
+      "protein": 38,
+      "carbs": 45,
+      "fat": 11
+    },
+    "allergens": [
+      "gluten",
+      "soy"
+    ]
+  },
+  {
+    "name": "Stuffed tuna Bowl",
+    "cuisine": "Vietnamese",
+    "dietary_tags": [
+      "gluten-free",
+      "low-carb",
+      "high-protein"
+    ],
+    "ingredients": [
+      "green beans",
+      "cream",
+      "beans",
+      "tempeh"
+    ],
+    "macros": {
+      "calories": 729,
+      "protein": 45,
+      "carbs": 53,
+      "fat": 22
+    },
+    "allergens": [
+      "dairy",
+      "soy"
+    ]
+  },
+  {
+    "name": "Herb-Infused turkey",
+    "cuisine": "Indian",
+    "dietary_tags": [
+      "high-carb",
+      "high-protein",
+      "keto",
+      "dairy-free",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "paprika",
+      "tempeh",
+      "flatbread"
+    ],
+    "macros": {
+      "calories": 733,
+      "protein": 28,
+      "carbs": 55,
+      "fat": 25
+    },
+    "allergens": [
+      "gluten",
+      "soy"
+    ]
+  },
+  {
+    "name": "Grilled seitan v1",
+    "cuisine": "Korean",
+    "dietary_tags": [
+      "high-carb",
+      "bulking",
+      "high-protein",
+      "dairy-free",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "ginger",
+      "oats",
+      "tempeh",
+      "eggplant"
+    ],
+    "macros": {
+      "calories": 730,
+      "protein": 27,
+      "carbs": 75,
+      "fat": 29
+    },
+    "allergens": [
+      "gluten",
+      "soy"
+    ]
+  },
+  {
+    "name": "Pan-Seared halibut v1",
+    "cuisine": "German",
+    "dietary_tags": [
+      "gluten-free",
+      "pescatarian",
+      "high-carb",
+      "high-protein",
+      "dairy-free"
+    ],
+    "ingredients": [
+      "peas",
+      "rice",
+      "shrimp",
+      "bell peppers",
+      "zucchini"
+    ],
+    "macros": {
+      "calories": 370,
+      "protein": 34,
+      "carbs": 57,
+      "fat": 9
+    },
+    "allergens": [
+      "shellfish"
+    ]
+  },
+  {
+    "name": "Slow-Cooked beef Bowl",
+    "cuisine": "Mexican",
+    "dietary_tags": [
+      "gluten-free",
+      "low-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "onion",
+      "carrots",
+      "olive oil",
+      "tofu"
+    ],
+    "macros": {
+      "calories": 770,
+      "protein": 48,
+      "carbs": 70,
+      "fat": 9
+    },
+    "allergens": [
+      "soy"
+    ]
+  },
+  {
+    "name": "Layered tuna Bowl",
+    "cuisine": "American",
+    "dietary_tags": [
+      "gluten-free",
+      "dairy-free",
+      "high-protein",
+      "high-carb"
+    ],
+    "ingredients": [
+      "peas",
+      "tuna",
+      "potato"
+    ],
+    "macros": {
+      "calories": 763,
+      "protein": 42,
+      "carbs": 50,
+      "fat": 7
+    },
+    "allergens": [
+      "fish"
+    ]
+  },
+  {
+    "name": "Marinated lamb v1",
+    "cuisine": "Chinese",
+    "dietary_tags": [
+      "high-protein",
+      "high-carb"
+    ],
+    "ingredients": [
+      "yogurt",
+      "oregano",
+      "cod",
+      "noodles",
+      "tomatoes"
+    ],
+    "macros": {
+      "calories": 683,
+      "protein": 40,
+      "carbs": 80,
+      "fat": 6
+    },
+    "allergens": [
+      "gluten",
+      "dairy",
+      "fish"
+    ]
+  },
+  {
+    "name": "Slow-Cooked tofu",
+    "cuisine": "Mexican",
+    "dietary_tags": [
+      "high-protein",
+      "cutting",
+      "high-carb"
+    ],
+    "ingredients": [
+      "cabbage",
+      "cream",
+      "oats",
+      "tempeh"
+    ],
+    "macros": {
+      "calories": 285,
+      "protein": 30,
+      "carbs": 20,
+      "fat": 13
+    },
+    "allergens": [
+      "gluten",
+      "dairy",
+      "soy"
+    ]
+  },
+  {
+    "name": "Grilled tofu Bowl",
+    "cuisine": "Greek",
+    "dietary_tags": [
+      "high-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "bread",
+      "peas",
+      "broccoli",
+      "tilapia"
+    ],
+    "macros": {
+      "calories": 483,
+      "protein": 23,
+      "carbs": 48,
+      "fat": 26
+    },
+    "allergens": [
+      "gluten",
+      "fish"
+    ]
+  },
+  {
+    "name": "Spiced tofu",
+    "cuisine": "Portuguese",
+    "dietary_tags": [
+      "gluten-free",
+      "low-carb",
+      "high-protein"
+    ],
+    "ingredients": [
+      "mozzarella",
+      "garlic",
+      "chicken"
+    ],
+    "macros": {
+      "calories": 727,
+      "protein": 29,
+      "carbs": 60,
+      "fat": 26
+    },
+    "allergens": [
+      "dairy"
+    ]
+  },
+  {
+    "name": "Crispy cod Bowl",
+    "cuisine": "French",
+    "dietary_tags": [
+      "gluten-free",
+      "low-carb",
+      "high-protein"
+    ],
+    "ingredients": [
+      "kale",
+      "beans",
+      "yogurt",
+      "turkey"
+    ],
+    "macros": {
+      "calories": 673,
+      "protein": 45,
+      "carbs": 62,
+      "fat": 27
+    },
+    "allergens": [
+      "dairy"
+    ]
+  },
+  {
+    "name": "Roasted tuna Bowl",
+    "cuisine": "Vietnamese",
+    "dietary_tags": [
+      "dairy-free",
+      "high-protein",
+      "high-carb"
+    ],
+    "ingredients": [
+      "turmeric",
+      "pork",
+      "pasta"
+    ],
+    "macros": {
+      "calories": 276,
+      "protein": 20,
+      "carbs": 17,
+      "fat": 28
+    },
+    "allergens": [
+      "gluten"
+    ]
+  },
+  {
+    "name": "Marinated eggs Bowl",
+    "cuisine": "Middle Eastern",
+    "dietary_tags": [
+      "gluten-free",
+      "low-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "onion",
+      "peas",
+      "halibut"
+    ],
+    "macros": {
+      "calories": 553,
+      "protein": 36,
+      "carbs": 45,
+      "fat": 10
+    },
+    "allergens": [
+      "fish"
+    ]
+  },
+  {
+    "name": "Marinated pork v1",
+    "cuisine": "Scandinavian",
+    "dietary_tags": [
+      "high-protein",
+      "keto",
+      "high-carb"
+    ],
+    "ingredients": [
+      "noodles",
+      "parmesan",
+      "beef"
+    ],
+    "macros": {
+      "calories": 420,
+      "protein": 27,
+      "carbs": 42,
+      "fat": 11
+    },
+    "allergens": [
+      "gluten",
+      "dairy"
+    ]
+  },
+  {
+    "name": "Grilled duck",
+    "cuisine": "Thai",
+    "dietary_tags": [
+      "gluten-free",
+      "high-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "potato",
+      "bell peppers",
+      "tilapia"
+    ],
+    "macros": {
+      "calories": 735,
+      "protein": 45,
+      "carbs": 68,
+      "fat": 32
+    },
+    "allergens": [
+      "fish"
+    ]
+  },
+  {
+    "name": "Grilled eggs Bowl",
+    "cuisine": "Mediterranean",
+    "dietary_tags": [
+      "high-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "beans",
+      "broccoli",
+      "corn",
+      "tilapia",
+      "noodles"
+    ],
+    "macros": {
+      "calories": 477,
+      "protein": 26,
+      "carbs": 38,
+      "fat": 22
+    },
+    "allergens": [
+      "gluten",
+      "fish"
+    ]
+  },
+  {
+    "name": "Pan-Seared tofu v1",
+    "cuisine": "American",
+    "dietary_tags": [
+      "gluten-free",
+      "high-protein",
+      "high-carb"
+    ],
+    "ingredients": [
+      "milk",
+      "peas",
+      "tuna",
+      "quinoa",
+      "mozzarella"
+    ],
+    "macros": {
+      "calories": 310,
+      "protein": 27,
+      "carbs": 40,
+      "fat": 28
+    },
+    "allergens": [
+      "dairy",
+      "fish"
+    ]
+  },
+  {
+    "name": "Glazed pork",
+    "cuisine": "Chinese",
+    "dietary_tags": [
+      "gluten-free",
+      "low-carb",
+      "high-protein",
+      "dairy-free",
+      "cutting"
+    ],
+    "ingredients": [
+      "turmeric",
+      "garlic",
+      "lentils",
+      "beef"
+    ],
+    "macros": {
+      "calories": 255,
+      "protein": 23,
+      "carbs": 31,
+      "fat": 12
+    },
+    "allergens": []
+  },
+  {
+    "name": "Tender lamb",
+    "cuisine": "Korean",
+    "dietary_tags": [
+      "gluten-free",
+      "low-carb",
+      "high-protein",
+      "keto"
+    ],
+    "ingredients": [
+      "thyme",
+      "yogurt",
+      "green beans",
+      "salmon",
+      "tomatoes"
+    ],
+    "macros": {
+      "calories": 399,
+      "protein": 25,
+      "carbs": 30,
+      "fat": 9
+    },
+    "allergens": [
+      "dairy",
+      "fish"
+    ]
+  },
+  {
+    "name": "Crispy turkey",
+    "cuisine": "Scandinavian",
+    "dietary_tags": [
+      "gluten-free",
+      "high-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "white beans",
+      "garlic",
+      "duck",
+      "quinoa"
+    ],
+    "macros": {
+      "calories": 231,
+      "protein": 30,
+      "carbs": 20,
+      "fat": 28
+    },
+    "allergens": []
+  },
+  {
+    "name": "Roasted beef Bowl",
+    "cuisine": "British",
+    "dietary_tags": [
+      "gluten-free",
+      "dairy-free",
+      "high-protein",
+      "high-carb"
+    ],
+    "ingredients": [
+      "rice",
+      "turkey",
+      "cumin"
+    ],
+    "macros": {
+      "calories": 678,
+      "protein": 49,
+      "carbs": 74,
+      "fat": 20
+    },
+    "allergens": []
+  },
+  {
+    "name": "Stuffed tilapia Bowl",
+    "cuisine": "French",
+    "dietary_tags": [
+      "dairy-free",
+      "high-protein",
+      "high-carb"
+    ],
+    "ingredients": [
+      "celery",
+      "chicken",
+      "lettuce",
+      "flatbread"
+    ],
+    "macros": {
+      "calories": 581,
+      "protein": 43,
+      "carbs": 77,
+      "fat": 23
+    },
+    "allergens": [
+      "gluten"
+    ]
+  },
+  {
+    "name": "Stuffed beef v1",
+    "cuisine": "Lebanese",
+    "dietary_tags": [
+      "high-protein",
+      "high-carb"
+    ],
+    "ingredients": [
+      "flatbread",
+      "seitan",
+      "kidney beans",
+      "butter",
+      "bell peppers"
+    ],
+    "macros": {
+      "calories": 758,
+      "protein": 44,
+      "carbs": 69,
+      "fat": 27
+    },
+    "allergens": [
+      "gluten",
+      "dairy"
+    ]
+  },
+  {
+    "name": "Pan-Seared salmon Bowl",
+    "cuisine": "Mediterranean",
+    "dietary_tags": [
+      "dairy-free",
+      "high-protein",
+      "vegetarian",
+      "high-carb"
+    ],
+    "ingredients": [
+      "kidney beans",
+      "salt",
+      "tempeh",
+      "flatbread"
+    ],
+    "macros": {
+      "calories": 642,
+      "protein": 43,
+      "carbs": 71,
+      "fat": 17
+    },
+    "allergens": [
+      "gluten",
+      "soy"
+    ]
+  },
+  {
+    "name": "Tender lamb Bowl",
+    "cuisine": "Korean",
+    "dietary_tags": [
+      "dairy-free",
+      "high-protein",
+      "high-carb"
+    ],
+    "ingredients": [
+      "thyme",
+      "chicken",
+      "barley",
+      "cumin"
+    ],
+    "macros": {
+      "calories": 533,
+      "protein": 41,
+      "carbs": 57,
+      "fat": 21
+    },
+    "allergens": [
+      "gluten"
+    ]
+  },
+  {
+    "name": "Golden duck Bowl",
+    "cuisine": "African",
+    "dietary_tags": [
+      "gluten-free",
+      "low-carb",
+      "bulking",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "kale",
+      "cabbage",
+      "celery",
+      "duck"
+    ],
+    "macros": {
+      "calories": 271,
+      "protein": 25,
+      "carbs": 35,
+      "fat": 33
+    },
+    "allergens": []
+  },
+  {
+    "name": "Layered pork Bowl",
+    "cuisine": "Thai",
+    "dietary_tags": [
+      "gluten-free",
+      "high-carb",
+      "high-protein",
+      "keto",
+      "dairy-free",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "garlic",
+      "oregano",
+      "sweet potato",
+      "seitan"
+    ],
+    "macros": {
+      "calories": 324,
+      "protein": 30,
+      "carbs": 35,
+      "fat": 6
+    },
+    "allergens": []
+  },
+  {
+    "name": "Golden eggs",
+    "cuisine": "Middle Eastern",
+    "dietary_tags": [
+      "gluten-free",
+      "high-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "quinoa",
+      "lentils",
+      "tempeh"
+    ],
+    "macros": {
+      "calories": 212,
+      "protein": 22,
+      "carbs": 40,
+      "fat": 6
+    },
+    "allergens": [
+      "soy"
+    ]
+  },
+  {
+    "name": "Herb-Infused pork Bowl",
+    "cuisine": "Indian",
+    "dietary_tags": [
+      "dairy-free",
+      "high-protein",
+      "high-carb"
+    ],
+    "ingredients": [
+      "couscous",
+      "spinach",
+      "turkey"
+    ],
+    "macros": {
+      "calories": 753,
+      "protein": 33,
+      "carbs": 80,
+      "fat": 12
+    },
+    "allergens": [
+      "gluten"
+    ]
+  },
+  {
+    "name": "Charred halibut",
+    "cuisine": "Chinese",
+    "dietary_tags": [
+      "high-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "noodles",
+      "chickpeas",
+      "eggs",
+      "oregano"
+    ],
+    "macros": {
+      "calories": 524,
+      "protein": 31,
+      "carbs": 58,
+      "fat": 18
+    },
+    "allergens": [
+      "gluten",
+      "egg"
+    ]
+  },
+  {
+    "name": "Glazed tempeh",
+    "cuisine": "American",
+    "dietary_tags": [
+      "high-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "asparagus",
+      "milk",
+      "halibut",
+      "oats"
+    ],
+    "macros": {
+      "calories": 325,
+      "protein": 26,
+      "carbs": 33,
+      "fat": 13
+    },
+    "allergens": [
+      "gluten",
+      "dairy",
+      "fish"
+    ]
+  },
+  {
+    "name": "Slow-Cooked eggs v1",
+    "cuisine": "Portuguese",
+    "dietary_tags": [
+      "dairy-free",
+      "high-protein",
+      "vegetarian",
+      "high-carb"
+    ],
+    "ingredients": [
+      "green beans",
+      "oats",
+      "garlic",
+      "lettuce",
+      "tofu"
+    ],
+    "macros": {
+      "calories": 708,
+      "protein": 50,
+      "carbs": 47,
+      "fat": 7
+    },
+    "allergens": [
+      "gluten",
+      "soy"
+    ]
+  },
+  {
+    "name": "Pan-Seared seitan Bowl",
+    "cuisine": "Indian",
+    "dietary_tags": [
+      "gluten-free",
+      "low-carb",
+      "high-protein"
+    ],
+    "ingredients": [
+      "spinach",
+      "mozzarella",
+      "basil",
+      "tuna"
+    ],
+    "macros": {
+      "calories": 777,
+      "protein": 45,
+      "carbs": 43,
+      "fat": 31
+    },
+    "allergens": [
+      "dairy",
+      "fish"
+    ]
+  },
+  {
+    "name": "Golden tuna",
+    "cuisine": "Peruvian",
+    "dietary_tags": [
+      "gluten-free",
+      "high-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "quinoa",
+      "pepper",
+      "broccoli",
+      "duck",
+      "zucchini"
+    ],
+    "macros": {
+      "calories": 477,
+      "protein": 31,
+      "carbs": 57,
+      "fat": 20
+    },
+    "allergens": []
+  },
+  {
+    "name": "Marinated cod",
+    "cuisine": "British",
+    "dietary_tags": [
+      "pescatarian",
+      "high-protein",
+      "high-carb"
+    ],
+    "ingredients": [
+      "kale",
+      "barley",
+      "parmesan",
+      "pepper",
+      "shrimp"
+    ],
+    "macros": {
+      "calories": 735,
+      "protein": 44,
+      "carbs": 42,
+      "fat": 34
+    },
+    "allergens": [
+      "gluten",
+      "dairy",
+      "shellfish"
+    ]
+  },
+  {
+    "name": "Slow-Cooked shrimp v1",
+    "cuisine": "Korean",
+    "dietary_tags": [
+      "gluten-free",
+      "low-carb",
+      "high-protein",
+      "keto",
+      "dairy-free"
+    ],
+    "ingredients": [
+      "turmeric",
+      "brussels sprouts",
+      "chicken"
+    ],
+    "macros": {
+      "calories": 521,
+      "protein": 44,
+      "carbs": 58,
+      "fat": 28
+    },
+    "allergens": []
+  },
+  {
+    "name": "Layered tuna",
+    "cuisine": "Indian",
+    "dietary_tags": [
+      "gluten-free",
+      "high-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "eggplant",
+      "tortilla",
+      "tomatoes",
+      "tilapia"
+    ],
+    "macros": {
+      "calories": 767,
+      "protein": 32,
+      "carbs": 70,
+      "fat": 14
+    },
+    "allergens": [
+      "fish"
+    ]
+  },
+  {
+    "name": "Grilled cod",
+    "cuisine": "Portuguese",
+    "dietary_tags": [
+      "gluten-free",
+      "low-carb",
+      "high-protein",
+      "dairy-free",
+      "vegetarian",
+      "vegan"
+    ],
+    "ingredients": [
+      "coconut oil",
+      "cumin",
+      "broccoli",
+      "cucumbers",
+      "eggs"
+    ],
+    "macros": {
+      "calories": 267,
+      "protein": 19,
+      "carbs": 20,
+      "fat": 23
+    },
+    "allergens": [
+      "egg"
+    ]
+  },
+  {
+    "name": "Herb-Infused pork",
+    "cuisine": "Japanese",
+    "dietary_tags": [
+      "gluten-free",
+      "high-carb",
+      "high-protein",
+      "keto",
+      "dairy-free"
+    ],
+    "ingredients": [
+      "chicken",
+      "rice",
+      "lettuce"
+    ],
+    "macros": {
+      "calories": 352,
+      "protein": 35,
+      "carbs": 50,
+      "fat": 13
+    },
+    "allergens": []
+  },
+  {
+    "name": "Miso Glazed Cod",
+    "cuisine": "Japanese",
+    "dietary_tags": [
+      "high-protein",
+      "gluten-free",
+      "pescatarian"
+    ],
+    "ingredients": [
+      "cod",
+      "miso",
+      "ginger",
+      "sesame oil"
+    ],
+    "macros": {
+      "calories": 380,
+      "protein": 42,
+      "carbs": 8,
+      "fat": 18
+    },
+    "allergens": [
+      "soy",
+      "fish"
+    ]
+  },
+  {
+    "name": "Tandoori Lamb Kebab",
+    "cuisine": "Indian",
+    "dietary_tags": [
+      "high-protein",
+      "gluten-free"
+    ],
+    "ingredients": [
+      "lamb",
+      "yogurt",
+      "tandoori spices",
+      "tomato"
+    ],
+    "macros": {
+      "calories": 520,
+      "protein": 45,
+      "carbs": 12,
+      "fat": 28
+    },
+    "allergens": [
+      "dairy"
+    ]
+  },
+  {
+    "name": "Black Bean Brownies",
+    "cuisine": "American",
+    "dietary_tags": [
+      "vegan",
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      "black beans",
+      "cacao",
+      "maple syrup",
+      "coconut oil"
+    ],
+    "macros": {
+      "calories": 280,
+      "protein": 8,
+      "carbs": 42,
+      "fat": 10
+    },
+    "allergens": []
   }
 ]
