@@ -2,6 +2,7 @@ import streamlit as st
 import json
 from pathlib import Path
 from main import run_pipeline, LOG_FILE
+import time
 
 st.set_page_config(page_title="What Should I Eat?", page_icon="🍽️")
 
@@ -56,8 +57,14 @@ if st.button("Suggest a Meal"):
     # Logging (NEW - matches your backend)
     # -----------------------------
     log_entry = {
+        "timestamp": time.time(),
         "success": success,
-        "attempts": 1  # (you can upgrade this later)
+        "attempts": 1,
+        "mood": mood,
+        "dietary": ", ".join(dietary),
+        "allergies": ", ".join(allergies),
+        "ingredients_count": len(user_input["ingredients"]),
+        "response_length": len(output)
     }
 
     logs = []
