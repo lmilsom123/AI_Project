@@ -21,21 +21,47 @@ with open("foods.json") as f:
     FOODS = json.load(f)
 
 # =============================================================================
-# STEP 1: FILTER DATA
+# STEP 1: FILTER DATA (MAX INGREDIENT MATCH)
 # =============================================================================
 
 def filter_foods(user_input):
     dietary = user_input.get("dietary", "").lower()
     allergies = user_input.get("allergies", "").lower()
+    ingredients = user_input.get("ingredients", [])
 
     dietary_list = [d.strip() for d in dietary.split(",") if d]
     allergy_list = [a.strip() for a in allergies.split(",") if a]
+    ingredient_list = [i.lower() for i in ingredients]
 
-    filtered = [
-        f for f in FOODS
-        if (all(tag in f["dietary_tags"] for tag in dietary_list) if dietary_list else True)
-        and (not any(allergen in f.get("allergens", []) for allergen in allergy_list))
-    ]
+    filtered = []
+
+    for f in FOODS:
+        # dietary
+        if dietary_list and not all(tag in f["dietary_tags"] for tag in dietary_list):
+            continue
+
+        # allergies
+        if any(allergen in f.get("allergens", []) for allergen in allergy_list):
+            continue
+
+        # ingredient scoring
+        if ingredient_list:
+            food_ingredients = [i.lower() for i in f.get("ingredients", [])]
+            match_count = sum(1 for i in ingredient_list if i in food_ingredients)
+
+            if match_count == 0:
+                continue
+
+            f["ingredient_score"] = match_count
+        else:
+            f["ingredient_score"] = 0
+
+        filtered.append(f)
+
+    # 🔥 keep only max matches
+    if ingredient_list and filtered:
+        max_score = max(f["ingredient_score"] for f in filtered)
+        filtered = [f for f in filtered if f["ingredient_score"] == max_score]
 
     return filtered if filtered else FOODS
 
@@ -106,7 +132,9 @@ def user_to_vector(user_input, scaler):
 def get_knn_meals(user_input, foods):
     X, names, scaler, lookup = build_features(foods)
 
-    model = NearestNeighbors(n_neighbors=3)
+    k = min(3, len(X))  # 🔥 FIX
+    model = NearestNeighbors(n_neighbors=k)
+
     model.fit(X)
 
     user_vec = user_to_vector(user_input, scaler)
@@ -131,10 +159,12 @@ def call_ollama(prompt):
     return response.json()["response"]
 
 
-# 🔥 UPDATED: STRICT PROMPT (prevents dashboard/extra output)
+# 🔥 UPDATED PROMPT WITH INGREDIENTS
 def build_prompt(user_input, meal_names, lookup):
     meal_details = "\n".join([
-        f"- {m}: Calories {lookup[m]['macros']['calories']}, "
+        f"- {m}: "
+        f"Ingredients: {', '.join(lookup[m].get('ingredients', []))} | "
+        f"Calories {lookup[m]['macros']['calories']}, "
         f"Protein {lookup[m]['macros']['protein']}g, "
         f"Carbs {lookup[m]['macros']['carbs']}g, "
         f"Fat {lookup[m]['macros']['fat']}g"
@@ -145,6 +175,7 @@ def build_prompt(user_input, meal_names, lookup):
 You are a meal recommendation assistant.
 
 User wants: {user_input.get("mood", "")}
+User ingredients: {", ".join(user_input.get("ingredients", []))}
 
 Here are top matches:
 {meal_details}
@@ -154,20 +185,45 @@ Choose ONE meal.
 Respond EXACTLY in this format and NOTHING else:
 
 MEAL: <name>
+INGREDIENTS: <comma separated full ingredient list>
 MACROS: Calories=<cal>, Protein=<g>, Carbs=<g>, Fat=<g>
-REASON: <one short sentence>
+REASON: <one clear sentence referencing ingredients and user preference>
 
 DO NOT include:
 - multiple meals
-- analysis
-- explanations
-- dashboards
-- extra text
+- extra explanation
 """
 
 
 # =============================================================================
-# STEP 6: PIPELINE
+# STEP 6: ENFORCE INGREDIENT CORRECTNESS
+# =============================================================================
+
+def enforce_ingredients(output, lookup):
+    if "MEAL:" not in output:
+        return output
+
+    try:
+        meal_name = output.split("MEAL:")[1].split("\n")[0].strip()
+        ingredients = lookup.get(meal_name, {}).get("ingredients", [])
+
+        lines = output.split("\n")
+        new_lines = []
+
+        for line in lines:
+            if line.startswith("INGREDIENTS:"):
+                new_lines.append(f"INGREDIENTS: {', '.join(ingredients)}")
+            else:
+                new_lines.append(line)
+
+        return "\n".join(new_lines)
+
+    except:
+        return output
+
+
+# =============================================================================
+# STEP 7: PIPELINE
 # =============================================================================
 
 def run_pipeline(user_input):
@@ -179,11 +235,14 @@ def run_pipeline(user_input):
 
     output = call_ollama(prompt)
 
+    # 🔥 enforce correct ingredients
+    output = enforce_ingredients(output, lookup)
+
     return output
 
 
 # =============================================================================
-# STEP 7: CLI TEST
+# STEP 8: CLI TEST
 # =============================================================================
 
 if __name__ == "__main__":
