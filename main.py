@@ -21,7 +21,7 @@ with open("foods.json") as f:
     FOODS = json.load(f)
 
 # =============================================================================
-# STEP 1: FILTER DATA (your original logic)
+# STEP 1: FILTER DATA
 # =============================================================================
 
 def filter_foods(user_input):
@@ -38,6 +38,7 @@ def filter_foods(user_input):
     ]
 
     return filtered if filtered else FOODS
+
 
 # =============================================================================
 # STEP 2: FEATURE ENGINEERING
@@ -73,6 +74,7 @@ def build_features(foods):
 
     return np.array(X_scaled), names, scaler, lookup
 
+
 # =============================================================================
 # STEP 3: USER → VECTOR
 # =============================================================================
@@ -96,6 +98,7 @@ def user_to_vector(user_input, scaler):
 
     return scaler.transform([[calories, protein, carbs, fat, 0]])
 
+
 # =============================================================================
 # STEP 4: KNN MODEL
 # =============================================================================
@@ -114,6 +117,7 @@ def get_knn_meals(user_input, foods):
 
     return meals, lookup
 
+
 # =============================================================================
 # STEP 5: LLM (OLLAMA)
 # =============================================================================
@@ -126,6 +130,8 @@ def call_ollama(prompt):
     response.raise_for_status()
     return response.json()["response"]
 
+
+# 🔥 UPDATED: STRICT PROMPT (prevents dashboard/extra output)
 def build_prompt(user_input, meal_names, lookup):
     meal_details = "\n".join([
         f"- {m}: Calories {lookup[m]['macros']['calories']}, "
@@ -140,15 +146,25 @@ You are a meal recommendation assistant.
 
 User wants: {user_input.get("mood", "")}
 
-Here are top matches from a machine learning model:
+Here are top matches:
 {meal_details}
 
-Pick ONE meal and respond EXACTLY like this:
+Choose ONE meal.
+
+Respond EXACTLY in this format and NOTHING else:
 
 MEAL: <name>
 MACROS: Calories=<cal>, Protein=<g>, Carbs=<g>, Fat=<g>
-REASON: <one sentence>
+REASON: <one short sentence>
+
+DO NOT include:
+- multiple meals
+- analysis
+- explanations
+- dashboards
+- extra text
 """
+
 
 # =============================================================================
 # STEP 6: PIPELINE
@@ -165,8 +181,9 @@ def run_pipeline(user_input):
 
     return output
 
+
 # =============================================================================
-# STEP 7: USER INTERFACE (same as yours)
+# STEP 7: CLI TEST
 # =============================================================================
 
 if __name__ == "__main__":
