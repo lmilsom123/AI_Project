@@ -273,5 +273,246 @@
     "ingredients": ["lettuce", "croutons", "parmesan"],
     "macros": {"calories": 330, "protein": 12, "carbs": 18, "fat": 22},
     "allergens": ["gluten", "dairy"]
+  },
+
+  {
+    "name": "Grilled Salmon with Quinoa",
+    "cuisine": "Mediterranean",
+    "dietary_tags": ["pescatarian", "high-protein", "gluten-free"],
+    "ingredients": ["salmon", "quinoa", "lemon", "olive oil"],
+    "macros": {"calories": 580, "protein": 42, "carbs": 40, "fat": 26},
+    "allergens": ["fish"]
+  },
+  {
+    "name": "Turkey Avocado Wrap",
+    "cuisine": "American",
+    "dietary_tags": ["high-protein"],
+    "ingredients": ["turkey", "tortilla", "avocado", "lettuce"],
+    "macros": {"calories": 520, "protein": 35, "carbs": 38, "fat": 24},
+    "allergens": ["gluten"]
+  },
+  {
+    "name": "Veggie Quesadilla",
+    "cuisine": "Mexican",
+    "dietary_tags": ["vegetarian"],
+    "ingredients": ["tortilla", "cheese", "bell pepper", "onion"],
+    "macros": {"calories": 540, "protein": 18, "carbs": 48, "fat": 30},
+    "allergens": ["dairy", "gluten"]
+  },
+  {
+    "name": "Chicken Fajita Bowl",
+    "cuisine": "Mexican",
+    "dietary_tags": ["high-protein", "gluten-free"],
+    "ingredients": ["chicken", "rice", "peppers", "onion"],
+    "macros": {"calories": 600, "protein": 40, "carbs": 55, "fat": 20},
+    "allergens": []
+  },
+  {
+    "name": "Egg Fried Rice",
+    "cuisine": "Asian",
+    "dietary_tags": ["vegetarian"],
+    "ingredients": ["rice", "egg", "soy sauce", "green onion"],
+    "macros": {"calories": 480, "protein": 16, "carbs": 62, "fat": 18},
+    "allergens": ["egg", "soy"]
+  },
+  {
+    "name": "Shrimp Stir Fry",
+    "cuisine": "Asian",
+    "dietary_tags": ["pescatarian", "high-protein"],
+    "ingredients": ["shrimp", "vegetables", "soy sauce"],
+    "macros": {"calories": 420, "protein": 34, "carbs": 20, "fat": 18},
+    "allergens": ["shellfish", "soy"]
+  },
+  {
+    "name": "Beef Tacos",
+    "cuisine": "Mexican",
+    "dietary_tags": ["high-protein"],
+    "ingredients": ["beef", "tortilla", "lettuce", "cheese"],
+    "macros": {"calories": 620, "protein": 34, "carbs": 42, "fat": 32},
+    "allergens": ["gluten", "dairy"]
+  },
+  {
+    "name": "Chicken Parmesan",
+    "cuisine": "Italian",
+    "dietary_tags": ["high-protein"],
+    "ingredients": ["chicken", "breadcrumbs", "cheese", "tomato sauce"],
+    "macros": {"calories": 710, "protein": 45, "carbs": 48, "fat": 34},
+    "allergens": ["gluten", "dairy"]
+  },
+  {
+    "name": "Stuffed Bell Peppers",
+    "cuisine": "American",
+    "dietary_tags": ["gluten-free"],
+    "ingredients": ["bell pepper", "ground beef", "rice", "tomato"],
+    "macros": {"calories": 480, "protein": 28, "carbs": 38, "fat": 22},
+    "allergens": []
+  },
+  {
+    "name": "Greek Chicken Bowl",
+    "cuisine": "Mediterranean",
+    "dietary_tags": ["high-protein", "gluten-free"],
+    "ingredients": ["chicken", "rice", "tzatziki", "cucumber"],
+    "macros": {"calories": 550, "protein": 42, "carbs": 45, "fat": 18},
+    "allergens": ["dairy"]
+  },
+  {
+    "name": "Pasta Primavera",
+    "cuisine": "Italian",
+    "dietary_tags": ["vegetarian"],
+    "ingredients": ["pasta", "vegetables", "olive oil"],
+    "macros": {"calories": 520, "protein": 14, "carbs": 70, "fat": 18},
+    "allergens": ["gluten"]
+  },
+  {
+    "name": "BBQ Chicken Pizza",
+    "cuisine": "American",
+    "dietary_tags": ["high-protein"],
+    "ingredients": ["chicken", "pizza dough", "bbq sauce", "cheese"],
+    "macros": {"calories": 760, "protein": 38, "carbs": 70, "fat": 34},
+    "allergens": ["gluten", "dairy"]
+  },
+  {
+    "name": "Spinach Ricotta Pasta",
+    "cuisine": "Italian",
+    "dietary_tags": ["vegetarian"],
+    "ingredients": ["pasta", "spinach", "ricotta"],
+    "macros": {"calories": 580, "protein": 20, "carbs": 65, "fat": 24},
+    "allergens": ["gluten", "dairy"]
+  },
+  {
+    "name": "Chicken Shawarma Wrap",
+    "cuisine": "Middle Eastern",
+    "dietary_tags": ["high-protein"],
+    "ingredients": ["chicken", "pita", "garlic sauce"],
+    "macros": {"calories": 590, "protein": 36, "carbs": 44, "fat": 28},
+    "allergens": ["gluten", "dairy"]
+  },
+  {
+    "name": "Lemon Garlic Shrimp Pasta",
+    "cuisine": "Italian",
+    "dietary_tags": ["pescatarian"],
+    "ingredients": ["shrimp", "pasta", "garlic", "lemon"],
+    "macros": {"calories": 610, "protein": 32, "carbs": 68, "fat": 20},
+    "allergens": ["gluten", "shellfish"]
+  },
+  {
+    "name": "Chicken Teriyaki Bowl",
+    "cuisine": "Japanese",
+    "dietary_tags": ["high-protein"],
+    "ingredients": ["chicken", "rice", "teriyaki sauce"],
+    "macros": {"calories": 620, "protein": 38, "carbs": 65, "fat": 18},
+    "allergens": ["soy"]
+  },
+  {
+    "name": "Veggie Sushi Roll",
+    "cuisine": "Japanese",
+    "dietary_tags": ["vegan"],
+    "ingredients": ["rice", "seaweed", "avocado", "cucumber"],
+    "macros": {"calories": 300, "protein": 6, "carbs": 50, "fat": 8},
+    "allergens": []
+  },
+  {
+    "name": "Ground Turkey Bowl",
+    "cuisine": "American",
+    "dietary_tags": ["high-protein", "gluten-free"],
+    "ingredients": ["turkey", "rice", "spinach"],
+    "macros": {"calories": 510, "protein": 40, "carbs": 40, "fat": 18},
+    "allergens": []
+  },
+  {
+    "name": "Eggplant Parmesan",
+    "cuisine": "Italian",
+    "dietary_tags": ["vegetarian"],
+    "ingredients": ["eggplant", "breadcrumbs", "cheese", "tomato sauce"],
+    "macros": {"calories": 600, "protein": 22, "carbs": 55, "fat": 30},
+    "allergens": ["gluten", "dairy"]
+  },
+  {
+    "name": "Protein Pancakes",
+    "cuisine": "American",
+    "dietary_tags": ["high-protein"],
+    "ingredients": ["protein powder", "egg", "oats"],
+    "macros": {"calories": 420, "protein": 35, "carbs": 38, "fat": 12},
+    "allergens": ["egg", "gluten"]
+  },
+  {
+    "name": "Chicken Gyro",
+    "cuisine": "Mediterranean",
+    "dietary_tags": ["high-protein"],
+    "ingredients": ["chicken", "pita", "tzatziki", "lettuce"],
+    "macros": {"calories": 570, "protein": 36, "carbs": 45, "fat": 26},
+    "allergens": ["gluten", "dairy"]
+  },
+  {
+    "name": "Vegan Buddha Bowl",
+    "cuisine": "American",
+    "dietary_tags": ["vegan", "gluten-free"],
+    "ingredients": ["quinoa", "chickpeas", "sweet potato", "spinach"],
+    "macros": {"calories": 500, "protein": 18, "carbs": 65, "fat": 18},
+    "allergens": []
+  },
+  {
+    "name": "Chicken and Veggie Skillet",
+    "cuisine": "American",
+    "dietary_tags": ["high-protein", "low-carb", "gluten-free"],
+    "ingredients": ["chicken", "zucchini", "bell pepper", "olive oil"],
+    "macros": {"calories": 430, "protein": 38, "carbs": 12, "fat": 24},
+    "allergens": []
+  },
+  {
+    "name": "Beef Burrito",
+    "cuisine": "Mexican",
+    "dietary_tags": ["high-protein"],
+    "ingredients": ["beef", "tortilla", "rice", "beans"],
+    "macros": {"calories": 720, "protein": 36, "carbs": 75, "fat": 30},
+    "allergens": ["gluten"]
+  },
+  {
+    "name": "Cottage Cheese Bowl",
+    "cuisine": "American",
+    "dietary_tags": ["vegetarian", "high-protein", "low-carb"],
+    "ingredients": ["cottage cheese", "berries", "honey"],
+    "macros": {"calories": 300, "protein": 28, "carbs": 22, "fat": 10},
+    "allergens": ["dairy"]
+  },
+  {
+    "name": "Chicken Noodle Soup",
+    "cuisine": "American",
+    "dietary_tags": ["high-protein"],
+    "ingredients": ["chicken", "noodles", "carrot", "celery"],
+    "macros": {"calories": 390, "protein": 28, "carbs": 42, "fat": 10},
+    "allergens": ["gluten"]
+  },
+  {
+    "name": "Pesto Chicken Pasta",
+    "cuisine": "Italian",
+    "dietary_tags": ["high-protein"],
+    "ingredients": ["chicken", "pasta", "pesto"],
+    "macros": {"calories": 680, "protein": 40, "carbs": 60, "fat": 28},
+    "allergens": ["gluten", "dairy", "nuts"]
+  },
+  {
+    "name": "Veggie Tacos",
+    "cuisine": "Mexican",
+    "dietary_tags": ["vegetarian"],
+    "ingredients": ["tortilla", "black beans", "corn", "avocado"],
+    "macros": {"calories": 480, "protein": 16, "carbs": 60, "fat": 20},
+    "allergens": ["gluten"]
+  },
+  {
+    "name": "Teriyaki Salmon Bowl",
+    "cuisine": "Japanese",
+    "dietary_tags": ["pescatarian", "high-protein"],
+    "ingredients": ["salmon", "rice", "teriyaki sauce", "broccoli"],
+    "macros": {"calories": 590, "protein": 38, "carbs": 50, "fat": 24},
+    "allergens": ["fish", "soy"]
+  },
+  {
+    "name": "Breakfast Oatmeal Bowl",
+    "cuisine": "American",
+    "dietary_tags": ["vegetarian"],
+    "ingredients": ["oats", "milk", "banana", "peanut butter"],
+    "macros": {"calories": 450, "protein": 16, "carbs": 55, "fat": 18},
+    "allergens": ["dairy", "nuts", "gluten"]
   }
 ]
