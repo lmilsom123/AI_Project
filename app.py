@@ -23,7 +23,10 @@ dietary = st.multiselect("Dietary preferences", dietary_options)
 allergy_options = ["dairy", "gluten", "nuts", "soy", "shellfish", "egg"]
 allergies = st.multiselect("Allergies", allergy_options)
 
-mood = st.text_input("What are you in the mood for?")
+meal_type = st.selectbox(
+    "What meal are you looking for?",
+    ["Breakfast", "Lunch", "Dinner"]
+)
 ingredients = st.text_input("Ingredients you have (comma separated)")
 
 # -----------------------------
@@ -34,7 +37,7 @@ if st.button("Suggest a Meal"):
     user_input = {
         "dietary": ", ".join(dietary),
         "allergies": ", ".join(allergies),
-        "mood": mood,
+        "meal_type": meal_type.lower(),
         "ingredients": [i.strip() for i in ingredients.split(",")] if ingredients else []
     }
 
@@ -71,7 +74,7 @@ if st.button("Suggest a Meal"):
         "timestamp": time.time(),
         "success": success,
         "attempts": 1,
-        "mood": mood,
+        "meal_type": meal_type,
         "dietary": ", ".join(dietary),
         "allergies": ", ".join(allergies),
         "ingredients_count": len(user_input["ingredients"]),
