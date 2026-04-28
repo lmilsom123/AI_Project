@@ -1,0 +1,13 @@
+For your project, you can explain it like this:
+
+The system uses a controlled vocabulary of ingredients extracted from the food database. User ingredients are validated against this vocabulary before retrieval. 
+Minor typos are corrected with fuzzy matching, while unknown ingredients are rejected with feedback. 
+This prevents nonsensical or unsupported inputs from entering the RAG and LLM stages.
+
+So your scope can be:
+
+Input guardrail: validate ingredients against foods.json
+Fuzzy correction: fix small typos like carrrot
+Invalid input blocking: reject unsupported words like tire
+Diet/allergy filtering: filter meal candidates before LLM
+Output guardrail: enforce correct ingredient list from database
