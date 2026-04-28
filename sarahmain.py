@@ -74,21 +74,36 @@ def filter_foods(user_input):
     dietary = user_input.get("dietary", "").lower()
     allergies = user_input.get("allergies", "").lower()
     ingredients = user_input.get("ingredients", [])
+    meal_type = user_input.get("meal_type", "").lower()  # FIX: normalize to lowercase
 
-    dietary_list = [d.strip() for d in dietary.split(",") if d]
-    allergy_list = [a.strip() for a in allergies.split(",") if a]
+    dietary_list = [d.strip() for d in dietary.split(",") if d.strip()]
+    allergy_list = [a.strip() for a in allergies.split(",") if a.strip()]
     ingredient_list = [i.lower() for i in ingredients]
 
     filtered = []
 
     for f in FOODS:
-        # dietary
-        if dietary_list and not all(tag in f["dietary_tags"] for tag in dietary_list):
-            continue
+        # MEAL TYPE FILTER — normalize food value to lowercase before comparing
+        if meal_type:
+            food_meal = f.get("meal_type", [])
+            if isinstance(food_meal, str):
+                if food_meal.lower() != meal_type:  # FIX: lowercase food value
+                    continue
+            else:
+                if meal_type not in [m.lower() for m in food_meal]:  # FIX: lowercase each entry
+                    continue
 
-        # allergies
-        if any(allergen in f.get("allergens", []) for allergen in allergy_list):
-            continue
+        # dietary — normalize food tags to lowercase before comparing
+        if dietary_list:
+            food_tags = [tag.lower() for tag in f.get("dietary_tags", [])]  # FIX: lowercase food tags
+            if not all(tag in food_tags for tag in dietary_list):
+                continue
+
+        # allergies — normalize food allergens to lowercase before comparing
+        if allergy_list:
+            food_allergens = [a.lower() for a in f.get("allergens", [])]  # FIX: lowercase food allergens
+            if any(allergen in food_allergens for allergen in allergy_list):
+                continue
 
         # ingredient scoring
         if ingredient_list:
@@ -104,12 +119,14 @@ def filter_foods(user_input):
 
         filtered.append(f)
 
-    # 🔥 keep only max matches
+    # keep only max ingredient matches
     if ingredient_list and filtered:
         max_score = max(f["ingredient_score"] for f in filtered)
         filtered = [f for f in filtered if f["ingredient_score"] == max_score]
 
-    return filtered if filtered else FOODS
+    # FIX: removed silent fallback to all FOODS — return empty list so caller
+    # can detect no results instead of silently ignoring the filters
+    return filtered
 
 
 # =============================================================================
@@ -178,7 +195,7 @@ def user_to_vector(user_input, scaler):
 def get_knn_meals(user_input, foods):
     X, names, scaler, lookup = build_features(foods)
 
-    k = min(3, len(X))  # 🔥 FIX
+    k = min(3, len(X))
     model = NearestNeighbors(n_neighbors=k)
 
     model.fit(X)
@@ -205,7 +222,6 @@ def call_ollama(prompt):
     return response.json()["response"]
 
 
-# 🔥 UPDATED PROMPT WITH INGREDIENTS
 def build_prompt(user_input, meal_names, lookup):
     meal_details = "\n".join([
         f"- {m}: "
@@ -287,31 +303,36 @@ def run_pipeline(user_input):
             "similarities": []
         }
 
-    # fix typos
     user_input["ingredients"] = corrected_ingredients
 
-    # pipeline
     foods = filter_foods(user_input)
+
+    # FIX: handle case where filters eliminate all foods
+    if not foods:
+        return {
+            "output": (
+                "No meals found matching your filters.\n\n"
+                "Try relaxing your dietary preferences, allergies, or meal type selection."
+            ),
+            "meal": "Unknown",
+            "retrieved_docs": [],
+            "similarities": []
+        }
+
     knn_meals, lookup = get_knn_meals(user_input, foods)
 
     prompt = build_prompt(user_input, knn_meals, lookup)
     output = call_ollama(prompt)
     output = enforce_ingredients(output, lookup)
 
-    # 🔥 extract meal name
     try:
         meal = output.split("MEAL:")[1].split("\n")[0].strip()
     except:
         meal = "Unknown"
 
-    # 🔥 create FAKE "retrieved docs" (your KNN results)
     retrieved_docs = knn_meals
-
-    # 🔥 create similarity proxy (distance → similarity)
-    # since KNN doesn't return similarity directly, we simulate it
     similarities = [1.0 - (i * 0.1) for i in range(len(knn_meals))]
 
-    # corrections note
     if corrections:
         correction_note = "Ingredient spelling corrected: "
         correction_note += ", ".join(
@@ -319,7 +340,6 @@ def run_pipeline(user_input):
         )
         output = correction_note + "\n\n" + output
 
-    # ✅ RETURN EVERYTHING
     return {
         "output": output,
         "meal": meal,
