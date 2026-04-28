@@ -44,7 +44,6 @@
     "allergens": [],
     "meal_type": ["Lunch", "Dinner"]
   },
-
   {
     "name": "Greek Yogurt Bowl",
     "cuisine": "Mediterranean",
@@ -52,7 +51,7 @@
     "ingredients": ["yogurt", "berries", "granola"],
     "macros": {"calories": 360, "protein": 24, "carbs": 42, "fat": 8},
     "allergens": ["dairy", "gluten"],
-    "meal_type": "Breakfast"
+    "meal_type": ["Breakfast"]
   },
   {
     "name": "Egg White Omelette",
@@ -61,7 +60,7 @@
     "ingredients": ["egg whites", "spinach", "mushroom"],
     "macros": {"calories": 230, "protein": 27, "carbs": 7, "fat": 9},
     "allergens": ["egg"],
-    "meal_type": "Breakfast"
+    "meal_type": ["Breakfast"]
   },
   {
     "name": "Breakfast Burrito",
@@ -70,7 +69,7 @@
     "ingredients": ["egg", "tortilla", "cheese", "sausage"],
     "macros": {"calories": 690, "protein": 31, "carbs": 52, "fat": 38},
     "allergens": ["egg", "dairy", "gluten"],
-    "meal_type": "Breakfast"
+    "meal_type": ["Breakfast"]
   },
   {
     "name": "Avocado Toast",
@@ -79,7 +78,7 @@
     "ingredients": ["bread", "avocado", "olive oil"],
     "macros": {"calories": 300, "protein": 8, "carbs": 34, "fat": 16},
     "allergens": ["gluten"],
-    "meal_type": "Breakfast"
+    "meal_type": ["Breakfast"]
   },
   {
     "name": "Protein Pancakes",
@@ -88,7 +87,7 @@
     "ingredients": ["protein powder", "egg", "oats"],
     "macros": {"calories": 420, "protein": 35, "carbs": 38, "fat": 12},
     "allergens": ["egg", "gluten"],
-    "meal_type": "Breakfast"
+    "meal_type": ["Breakfast"]
   },
   {
     "name": "Cottage Cheese Bowl",
@@ -97,7 +96,7 @@
     "ingredients": ["cottage cheese", "berries", "honey"],
     "macros": {"calories": 300, "protein": 28, "carbs": 22, "fat": 10},
     "allergens": ["dairy"],
-    "meal_type": "Breakfast"
+    "meal_type": ["Breakfast"]
   },
   {
     "name": "Breakfast Oatmeal Bowl",
@@ -106,9 +105,8 @@
     "ingredients": ["oats", "milk", "banana", "peanut butter"],
     "macros": {"calories": 450, "protein": 16, "carbs": 55, "fat": 18},
     "allergens": ["dairy", "nuts", "gluten"],
-    "meal_type": "Breakfast"
+    "meal_type": ["Breakfast"]
   },
-
   {
     "name": "Grilled Chicken Bowl",
     "cuisine": "American",
@@ -179,7 +177,7 @@
     "ingredients": ["egg", "tortilla", "cheese", "sausage"],
     "macros": {"calories": 690, "protein": 31, "carbs": 52, "fat": 38},
     "allergens": ["egg", "dairy", "gluten"],
-    "meal_type": "Breakfast"
+    "meal_type": ["Breakfast"]
   },
   {
     "name": "Salmon with Rice",
@@ -215,7 +213,7 @@
     "ingredients": ["bread", "avocado", "olive oil"],
     "macros": {"calories": 300, "protein": 8, "carbs": 34, "fat": 16},
     "allergens": ["gluten"],
-    "meal_type": "Breakfast"
+    "meal_type": ["Breakfast"]
   },
   {
     "name": "Caprese Salad",
@@ -253,7 +251,6 @@
     "allergens": ["sesame"],
     "meal_type": ["Lunch", "Dinner"]
   },
-
   {
     "name": "Spaghetti Bolognese",
     "cuisine": "Italian",
@@ -272,7 +269,6 @@
     "allergens": ["gluten", "dairy"],
     "meal_type": ["Lunch", "Dinner"]
   },
-
   {
     "name": "Chicken Alfredo",
     "cuisine": "Italian",
@@ -282,7 +278,6 @@
     "allergens": ["gluten", "dairy"],
     "meal_type": ["Lunch", "Dinner"]
   },
-
   {
     "name": "Veggie Fried Rice",
     "cuisine": "Asian",
@@ -292,7 +287,6 @@
     "allergens": ["egg", "soy"],
     "meal_type": ["Lunch", "Dinner"]
   },
-
   {
     "name": "Chicken Fried Rice",
     "cuisine": "Asian",
@@ -302,7 +296,6 @@
     "allergens": ["egg", "soy"],
     "meal_type": ["Lunch", "Dinner"]
   },
-
   {
     "name": "Beef Stir Fry",
     "cuisine": "Asian",
@@ -312,7 +305,6 @@
     "allergens": ["soy"],
     "meal_type": ["Lunch", "Dinner"]
   },
-
   {
     "name": "Chicken Salad",
     "cuisine": "American",
@@ -322,7 +314,6 @@
     "allergens": ["egg"],
     "meal_type": ["Lunch", "Dinner"]
   },
-
   {
     "name": "Caesar Salad",
     "cuisine": "American",
@@ -332,7 +323,6 @@
     "allergens": ["gluten", "dairy"],
     "meal_type": ["Lunch", "Dinner"]
   },
-
   {
     "name": "Grilled Salmon with Quinoa",
     "cuisine": "Mediterranean",
@@ -360,7 +350,6 @@
     "allergens": ["dairy", "gluten"],
     "meal_type": ["Lunch", "Dinner"]
   },
-
   {
     "name": "Chicken Fajita Bowl",
     "cuisine": "Mexican",
@@ -388,7 +377,6 @@
     "allergens": ["shellfish", "soy"],
     "meal_type": ["Lunch", "Dinner"]
   },
-
   {
     "name": "Beef Tacos",
     "cuisine": "Mexican",
@@ -416,7 +404,6 @@
     "allergens": [],
     "meal_type": ["Lunch", "Dinner"]
   },
-
   {
     "name": "Greek Chicken Bowl",
     "cuisine": "Mediterranean",
@@ -444,7 +431,6 @@
     "allergens": ["gluten", "dairy"],
     "meal_type": ["Lunch", "Dinner"]
   },
-
   {
     "name": "Spinach Ricotta Pasta",
     "cuisine": "Italian",
@@ -472,7 +458,6 @@
     "allergens": ["gluten", "shellfish"],
     "meal_type": ["Lunch", "Dinner"]
   },
-
   {
     "name": "Chicken Teriyaki Bowl",
     "cuisine": "Japanese",
@@ -491,7 +476,6 @@
     "allergens": [],
     "meal_type": ["Lunch", "Dinner"]
   },
-
   {
     "name": "Ground Turkey Bowl",
     "cuisine": "American",
@@ -510,7 +494,6 @@
     "allergens": ["gluten", "dairy"],
     "meal_type": ["Lunch", "Dinner"]
   },
-
   {
     "name": "Protein Pancakes",
     "cuisine": "American",
@@ -518,7 +501,7 @@
     "ingredients": ["protein powder", "egg", "oats"],
     "macros": {"calories": 420, "protein": 35, "carbs": 38, "fat": 12},
     "allergens": ["egg", "gluten"],
-    "meal_type": "Breakfast"
+    "meal_type": ["Breakfast"]
   },
   {
     "name": "Chicken Gyro",
@@ -529,7 +512,6 @@
     "allergens": ["gluten", "dairy"],
     "meal_type": ["Lunch", "Dinner"]
   },
-
   {
     "name": "Vegan Buddha Bowl",
     "cuisine": "American",
@@ -564,7 +546,7 @@
     "ingredients": ["cottage cheese", "berries", "honey"],
     "macros": {"calories": 300, "protein": 28, "carbs": 22, "fat": 10},
     "allergens": ["dairy"],
-    "meal_type": "Breakfast"
+    "meal_type": ["Breakfast"]
   },
   {
     "name": "Chicken Noodle Soup",
@@ -609,7 +591,7 @@
     "ingredients": ["oats", "milk", "banana", "peanut butter"],
     "macros": {"calories": 450, "protein": 16, "carbs": 55, "fat": 18},
     "allergens": ["dairy", "nuts", "gluten"],
-    "meal_type": "Breakfast"
+    "meal_type": ["Breakfast"]
   },
   {
     "name": "Chicken Enchilada Bowl",
@@ -627,7 +609,7 @@
     "ingredients": ["banana", "berries", "yogurt", "granola"],
     "macros": {"calories": 380, "protein": 14, "carbs": 60, "fat": 10},
     "allergens": ["dairy", "gluten"],
-    "meal_type": "Breakfast"
+    "meal_type": ["Breakfast"]
   },
   {
     "name": "Egg and Spinach Breakfast Wrap",
@@ -636,9 +618,8 @@
     "ingredients": ["egg", "tortilla", "spinach", "cheese"],
     "macros": {"calories": 420, "protein": 24, "carbs": 32, "fat": 20},
     "allergens": ["egg", "dairy", "gluten"],
-    "meal_type": "Breakfast"
+    "meal_type": ["Breakfast"]
   },
-
   {
     "name": "Grilled Steak Salad",
     "cuisine": "American",
