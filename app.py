@@ -1,7 +1,7 @@
 import streamlit as st
 import json
 from pathlib import Path
-from main import run_pipeline, LOG_FILE
+from sarahmain import run_pipeline, LOG_FILE
 import time
 
 st.set_page_config(page_title="What Should I Eat?", page_icon="🍽️")
@@ -40,9 +40,14 @@ if st.button("Suggest a Meal"):
 
     try:
         with st.spinner("Thinking..."):
-            output = run_pipeline(user_input)
+            result = run_pipeline(user_input)
 
-        # ✅ Since pipeline returns STRING
+        # ✅ Extract structured outputs
+        output = result.get("output", "")
+        meal = result.get("meal", "Unknown")
+        retrieved_docs = result.get("retrieved_docs", [])
+        similarities = result.get("similarities", [])
+
         st.success("Here’s your meal 👇")
         st.markdown(f"```\n{output}\n```")
 
@@ -51,10 +56,16 @@ if st.button("Suggest a Meal"):
     except Exception as e:
         st.error(f"Error: {e}")
         output = str(e)
+
+        # fallback values so logging doesn't break
+        meal = "Unknown"
+        retrieved_docs = []
+        similarities = []
+
         success = False
 
     # -----------------------------
-    # Logging (NEW - matches your backend)
+    # Logging
     # -----------------------------
     log_entry = {
         "timestamp": time.time(),
@@ -64,7 +75,12 @@ if st.button("Suggest a Meal"):
         "dietary": ", ".join(dietary),
         "allergies": ", ".join(allergies),
         "ingredients_count": len(user_input["ingredients"]),
-        "response_length": len(output)
+        "response_length": len(output),
+
+        # ✅ NOW THESE WILL WORK
+        "meal": meal,
+        "docs_pulled": len(retrieved_docs),
+        "similarity_score": max(similarities) if similarities else 0
     }
 
     logs = []
@@ -76,4 +92,3 @@ if st.button("Suggest a Meal"):
 
     with open(LOG_FILE, "w") as f:
         json.dump(logs, f, indent=2)
-
