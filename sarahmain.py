@@ -273,31 +273,45 @@ def enforce_ingredients(output, lookup):
 # =============================================================================
 
 def run_pipeline(user_input):
-    # 🔥 ADD THIS PART
     invalid, corrected_ingredients, corrections = validate_user_ingredients(user_input)
 
     if invalid:
-        return (
-            "Invalid ingredient input.\n\n"
-            f"I could not find these as valid ingredient options: {', '.join(invalid)}.\n"
-            "Please enter ingredients that exist in the food database."
-        )
+        return {
+            "output": (
+                "Invalid ingredient input.\n\n"
+                f"I could not find these as valid ingredient options: {', '.join(invalid)}.\n"
+                "Please enter ingredients that exist in the food database."
+            ),
+            "meal": "Unknown",
+            "retrieved_docs": [],
+            "similarities": []
+        }
 
-    # replace with corrected ingredients (fix typos)
+    # fix typos
     user_input["ingredients"] = corrected_ingredients
 
-    # original pipeline
+    # pipeline
     foods = filter_foods(user_input)
-
     knn_meals, lookup = get_knn_meals(user_input, foods)
 
     prompt = build_prompt(user_input, knn_meals, lookup)
-
     output = call_ollama(prompt)
-
     output = enforce_ingredients(output, lookup)
 
-    # 🔥 OPTIONAL: show corrections
+    # 🔥 extract meal name
+    try:
+        meal = output.split("MEAL:")[1].split("\n")[0].strip()
+    except:
+        meal = "Unknown"
+
+    # 🔥 create FAKE "retrieved docs" (your KNN results)
+    retrieved_docs = knn_meals
+
+    # 🔥 create similarity proxy (distance → similarity)
+    # since KNN doesn't return similarity directly, we simulate it
+    similarities = [1.0 - (i * 0.1) for i in range(len(knn_meals))]
+
+    # corrections note
     if corrections:
         correction_note = "Ingredient spelling corrected: "
         correction_note += ", ".join(
@@ -305,31 +319,10 @@ def run_pipeline(user_input):
         )
         output = correction_note + "\n\n" + output
 
-    return output
-
-
-# =============================================================================
-# STEP 8: CLI TEST
-# =============================================================================
-
-if __name__ == "__main__":
-    print("=== What Should I Eat? (KNN + AI) ===")
-
-    user_input = {
-        "dietary": input("Dietary: "),
-        "allergies": input("Allergies: "),
-        "mood": input("Mood: "),
+    # ✅ RETURN EVERYTHING
+    return {
+        "output": output,
+        "meal": meal,
+        "retrieved_docs": retrieved_docs,
+        "similarities": similarities
     }
-
-    raw_ingredients = input("Ingredients, comma separated: ")
-
-    user_input["ingredients"] = [
-        i.strip()
-        for i in raw_ingredients.split(",")
-        if i.strip()
-    ]
-
-    result = run_pipeline(user_input)
-
-    print("\n=== RESULT ===")
-    print(result)
