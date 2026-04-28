@@ -65,7 +65,6 @@ def validate_user_ingredients(user_input):
     return invalid_ingredients, corrected_ingredients, corrections
 
 
-
 # =============================================================================
 # STEP 1: FILTER DATA (MAX INGREDIENT MATCH)
 # =============================================================================
@@ -74,7 +73,6 @@ def filter_foods(user_input):
     dietary = user_input.get("dietary", "").lower()
     allergies = user_input.get("allergies", "").lower()
     ingredients = user_input.get("ingredients", [])
-    meal_type = user_input.get("meal_type", "").lower()  # FIX: normalize to lowercase
 
     dietary_list = [d.strip() for d in dietary.split(",") if d.strip()]
     allergy_list = [a.strip() for a in allergies.split(",") if a.strip()]
@@ -83,27 +81,13 @@ def filter_foods(user_input):
     filtered = []
 
     for f in FOODS:
-        # MEAL TYPE FILTER — normalize food value to lowercase before comparing
-        if meal_type:
-            food_meal = f.get("meal_type", [])
-            if isinstance(food_meal, str):
-                if food_meal.lower() != meal_type:  # FIX: lowercase food value
-                    continue
-            else:
-                if meal_type not in [m.lower() for m in food_meal]:  # FIX: lowercase each entry
-                    continue
+        # dietary filter
+        if dietary_list and not all(tag in f["dietary_tags"] for tag in dietary_list):
+            continue
 
-        # dietary — normalize food tags to lowercase before comparing
-        if dietary_list:
-            food_tags = [tag.lower() for tag in f.get("dietary_tags", [])]  # FIX: lowercase food tags
-            if not all(tag in food_tags for tag in dietary_list):
-                continue
-
-        # allergies — normalize food allergens to lowercase before comparing
-        if allergy_list:
-            food_allergens = [a.lower() for a in f.get("allergens", [])]  # FIX: lowercase food allergens
-            if any(allergen in food_allergens for allergen in allergy_list):
-                continue
+        # allergy filter
+        if any(allergen in f.get("allergens", []) for allergen in allergy_list):
+            continue
 
         # ingredient scoring
         if ingredient_list:
@@ -124,8 +108,9 @@ def filter_foods(user_input):
         max_score = max(f["ingredient_score"] for f in filtered)
         filtered = [f for f in filtered if f["ingredient_score"] == max_score]
 
-    # FIX: removed silent fallback to all FOODS — return empty list so caller
-    # can detect no results instead of silently ignoring the filters
+    # IMPORTANT:
+    # Do NOT return FOODS if nothing matches.
+    # Returning all foods could allow unsafe recommendations.
     return filtered
 
 
@@ -303,18 +288,23 @@ def run_pipeline(user_input):
             "similarities": []
         }
 
+    # fix typos
     user_input["ingredients"] = corrected_ingredients
 
+    # filter safe meal candidates
     foods = filter_foods(user_input)
 
-    # FIX: handle case where filters eliminate all foods
+    # CRITICAL GUARDRAIL:
+    # If no safe foods remain after dietary/allergy/ingredient filtering,
+    # stop instead of falling back to all foods.
     if not foods:
         return {
             "output": (
-                "No meals found matching your filters.\n\n"
-                "Try relaxing your dietary preferences, allergies, or meal type selection."
+                "No safe meal found.\n\n"
+                "Your inputs may conflict with your dietary preferences, allergies, "
+                "or available ingredients. Please try different ingredients or preferences."
             ),
-            "meal": "Unknown",
+            "meal": "None",
             "retrieved_docs": [],
             "similarities": []
         }
@@ -346,3 +336,50 @@ def run_pipeline(user_input):
         "retrieved_docs": retrieved_docs,
         "similarities": similarities
     }
+
+
+# =============================================================================
+# STEP 8: CLI TEST WITH CONTROL LOOP
+# =============================================================================
+
+if __name__ == "__main__":
+    print("=== What Should I Eat? (KNN + AI) ===")
+
+    user_input = {
+        "dietary": input("Dietary: "),
+        "allergies": input("Allergies: "),
+        "mood": input("Mood: "),
+    }
+
+    while True:
+        raw_ingredients = input("Ingredients, comma separated: ")
+
+        user_input["ingredients"] = [
+            i.strip()
+            for i in raw_ingredients.split(",")
+            if i.strip()
+        ]
+
+        invalid, corrected_ingredients, corrections = validate_user_ingredients(user_input)
+
+        if not invalid:
+            user_input["ingredients"] = corrected_ingredients
+
+            if corrections:
+                print(
+                    "Ingredient spelling corrected: "
+                    + ", ".join([f"{wrong} → {right}" for wrong, right in corrections.items()])
+                )
+
+            break
+
+        print(
+            "\nInvalid ingredient input."
+            f"\nI could not find these as valid ingredient options: {', '.join(invalid)}."
+            "\nPlease try again.\n"
+        )
+
+    result = run_pipeline(user_input)
+
+    print("\n=== RESULT ===")
+    print(result["output"])
