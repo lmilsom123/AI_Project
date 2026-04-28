@@ -5,7 +5,8 @@
     "dietary_tags": ["vegetarian", "vegan", "dairy-free", "gluten-free"],
     "ingredients": ["lentils", "carrot", "celery", "onion", "garlic", "olive oil"],
     "macros": {"calories": 320, "protein": 18, "carbs": 42, "fat": 8},
-    "allergens": []
+    "allergens": [],
+    "meal_type": ["Lunch", "Dinner"]
   },
   {
     "name": "Chickpea Curry",
@@ -13,7 +14,8 @@
     "dietary_tags": ["vegetarian", "vegan", "dairy-free", "gluten-free"],
     "ingredients": ["chickpeas", "tomato", "onion", "garlic", "coconut milk"],
     "macros": {"calories": 470, "protein": 16, "carbs": 52, "fat": 20},
-    "allergens": []
+    "allergens": [],
+    "meal_type": ["Lunch", "Dinner"]
   },
   {
     "name": "Tofu Stir Fry",
@@ -21,7 +23,8 @@
     "dietary_tags": ["vegetarian", "vegan", "dairy-free", "high-protein"],
     "ingredients": ["tofu", "broccoli", "carrot", "soy sauce", "ginger"],
     "macros": {"calories": 410, "protein": 24, "carbs": 24, "fat": 22},
-    "allergens": ["soy"]
+    "allergens": ["soy"],
+    "meal_type": ["Lunch", "Dinner"]
   },
   {
     "name": "Quinoa Veggie Bowl",
@@ -29,7 +32,8 @@
     "dietary_tags": ["vegetarian", "vegan", "gluten-free"],
     "ingredients": ["quinoa", "spinach", "cucumber", "olive oil"],
     "macros": {"calories": 430, "protein": 15, "carbs": 54, "fat": 16},
-    "allergens": []
+    "allergens": [],
+    "meal_type": ["Lunch", "Dinner"]
   },
   {
     "name": "Black Bean Burrito Bowl",
@@ -37,31 +41,18 @@
     "dietary_tags": ["vegetarian", "vegan", "gluten-free"],
     "ingredients": ["rice", "black beans", "corn", "avocado", "salsa"],
     "macros": {"calories": 520, "protein": 16, "carbs": 72, "fat": 18},
-    "allergens": []
+    "allergens": [],
+    "meal_type": ["Lunch", "Dinner"]
   },
-  {
-    "name": "Vegetable Pad Thai",
-    "cuisine": "Thai",
-    "dietary_tags": ["vegetarian"],
-    "ingredients": ["rice noodles", "egg", "tofu", "peanuts"],
-    "macros": {"calories": 610, "protein": 22, "carbs": 74, "fat": 24},
-    "allergens": ["egg", "nuts", "soy"]
-  },
-  {
-    "name": "Zucchini Noodles with Pesto",
-    "cuisine": "Italian",
-    "dietary_tags": ["vegetarian", "low-carb"],
-    "ingredients": ["zucchini", "pesto", "parmesan"],
-    "macros": {"calories": 310, "protein": 10, "carbs": 14, "fat": 24},
-    "allergens": ["dairy", "nuts"]
-  },
+
   {
     "name": "Greek Yogurt Bowl",
     "cuisine": "Mediterranean",
     "dietary_tags": ["vegetarian", "high-protein"],
     "ingredients": ["yogurt", "berries", "granola"],
     "macros": {"calories": 360, "protein": 24, "carbs": 42, "fat": 8},
-    "allergens": ["dairy", "gluten"]
+    "allergens": ["dairy", "gluten"],
+    "meal_type": "Breakfast"
   },
   {
     "name": "Egg White Omelette",
@@ -69,64 +60,8 @@
     "dietary_tags": ["vegetarian", "high-protein", "low-carb"],
     "ingredients": ["egg whites", "spinach", "mushroom"],
     "macros": {"calories": 230, "protein": 27, "carbs": 7, "fat": 9},
-    "allergens": ["egg"]
-  },
-  {
-    "name": "Grilled Chicken Bowl",
-    "cuisine": "American",
-    "dietary_tags": ["high-protein", "gluten-free"],
-    "ingredients": ["chicken", "rice", "broccoli"],
-    "macros": {"calories": 540, "protein": 44, "carbs": 46, "fat": 16},
-    "allergens": []
-  },
-
-  {
-    "name": "Chicken Tikka Masala",
-    "cuisine": "Indian",
-    "dietary_tags": ["high-protein"],
-    "ingredients": ["chicken", "tomato", "cream", "spices"],
-    "macros": {"calories": 610, "protein": 39, "carbs": 22, "fat": 34},
-    "allergens": ["dairy"]
-  },
-  {
-    "name": "Turkey Chili",
-    "cuisine": "American",
-    "dietary_tags": ["high-protein", "gluten-free"],
-    "ingredients": ["turkey", "beans", "tomato"],
-    "macros": {"calories": 460, "protein": 38, "carbs": 30, "fat": 16},
-    "allergens": []
-  },
-  {
-    "name": "Steak and Sweet Potato",
-    "cuisine": "American",
-    "dietary_tags": ["high-protein"],
-    "ingredients": ["steak", "sweet potato", "butter"],
-    "macros": {"calories": 680, "protein": 46, "carbs": 42, "fat": 34},
-    "allergens": ["dairy"]
-  },
-  {
-    "name": "Chicken Caesar Wrap",
-    "cuisine": "American",
-    "dietary_tags": ["high-protein"],
-    "ingredients": ["chicken", "tortilla", "romaine", "parmesan"],
-    "macros": {"calories": 560, "protein": 36, "carbs": 39, "fat": 28},
-    "allergens": ["gluten", "dairy"]
-  },
-  {
-    "name": "Burrito Bowl",
-    "cuisine": "Mexican",
-    "dietary_tags": ["high-protein"],
-    "ingredients": ["rice", "chicken", "beans", "guacamole"],
-    "macros": {"calories": 670, "protein": 38, "carbs": 72, "fat": 24},
-    "allergens": []
-  },
-  {
-    "name": "Pho with Chicken",
-    "cuisine": "Vietnamese",
-    "dietary_tags": ["high-protein"],
-    "ingredients": ["rice noodles", "chicken", "broth"],
-    "macros": {"calories": 450, "protein": 31, "carbs": 50, "fat": 8},
-    "allergens": []
+    "allergens": ["egg"],
+    "meal_type": "Breakfast"
   },
   {
     "name": "Breakfast Burrito",
@@ -134,16 +69,126 @@
     "dietary_tags": ["high-protein"],
     "ingredients": ["egg", "tortilla", "cheese", "sausage"],
     "macros": {"calories": 690, "protein": 31, "carbs": 52, "fat": 38},
-    "allergens": ["egg", "dairy", "gluten"]
+    "allergens": ["egg", "dairy", "gluten"],
+    "meal_type": "Breakfast"
+  },
+  {
+    "name": "Avocado Toast",
+    "cuisine": "American",
+    "dietary_tags": ["vegetarian"],
+    "ingredients": ["bread", "avocado", "olive oil"],
+    "macros": {"calories": 300, "protein": 8, "carbs": 34, "fat": 16},
+    "allergens": ["gluten"],
+    "meal_type": "Breakfast"
+  },
+  {
+    "name": "Protein Pancakes",
+    "cuisine": "American",
+    "dietary_tags": ["high-protein"],
+    "ingredients": ["protein powder", "egg", "oats"],
+    "macros": {"calories": 420, "protein": 35, "carbs": 38, "fat": 12},
+    "allergens": ["egg", "gluten"],
+    "meal_type": "Breakfast"
+  },
+  {
+    "name": "Cottage Cheese Bowl",
+    "cuisine": "American",
+    "dietary_tags": ["vegetarian", "high-protein", "low-carb"],
+    "ingredients": ["cottage cheese", "berries", "honey"],
+    "macros": {"calories": 300, "protein": 28, "carbs": 22, "fat": 10},
+    "allergens": ["dairy"],
+    "meal_type": "Breakfast"
+  },
+  {
+    "name": "Breakfast Oatmeal Bowl",
+    "cuisine": "American",
+    "dietary_tags": ["vegetarian"],
+    "ingredients": ["oats", "milk", "banana", "peanut butter"],
+    "macros": {"calories": 450, "protein": 16, "carbs": 55, "fat": 18},
+    "allergens": ["dairy", "nuts", "gluten"],
+    "meal_type": "Breakfast"
   },
 
+  {
+    "name": "Grilled Chicken Bowl",
+    "cuisine": "American",
+    "dietary_tags": ["high-protein", "gluten-free"],
+    "ingredients": ["chicken", "rice", "broccoli"],
+    "macros": {"calories": 540, "protein": 44, "carbs": 46, "fat": 16},
+    "allergens": [],
+    "meal_type": ["Lunch", "Dinner"]
+  },
+  {
+    "name": "Chicken Tikka Masala",
+    "cuisine": "Indian",
+    "dietary_tags": ["high-protein"],
+    "ingredients": ["chicken", "tomato", "cream", "spices"],
+    "macros": {"calories": 610, "protein": 39, "carbs": 22, "fat": 34},
+    "allergens": ["dairy"],
+    "meal_type": ["Lunch", "Dinner"]
+  },
+  {
+    "name": "Turkey Chili",
+    "cuisine": "American",
+    "dietary_tags": ["high-protein", "gluten-free"],
+    "ingredients": ["turkey", "beans", "tomato"],
+    "macros": {"calories": 460, "protein": 38, "carbs": 30, "fat": 16},
+    "allergens": [],
+    "meal_type": ["Lunch", "Dinner"]
+  },
+  {
+    "name": "Steak and Sweet Potato",
+    "cuisine": "American",
+    "dietary_tags": ["high-protein"],
+    "ingredients": ["steak", "sweet potato", "butter"],
+    "macros": {"calories": 680, "protein": 46, "carbs": 42, "fat": 34},
+    "allergens": ["dairy"],
+    "meal_type": ["Lunch", "Dinner"]
+  },
+  {
+    "name": "Chicken Caesar Wrap",
+    "cuisine": "American",
+    "dietary_tags": ["high-protein"],
+    "ingredients": ["chicken", "tortilla", "romaine", "parmesan"],
+    "macros": {"calories": 560, "protein": 36, "carbs": 39, "fat": 28},
+    "allergens": ["gluten", "dairy"],
+    "meal_type": ["Lunch", "Dinner"]
+  },
+  {
+    "name": "Burrito Bowl",
+    "cuisine": "Mexican",
+    "dietary_tags": ["high-protein"],
+    "ingredients": ["rice", "chicken", "beans", "guacamole"],
+    "macros": {"calories": 670, "protein": 38, "carbs": 72, "fat": 24},
+    "allergens": [],
+    "meal_type": ["Lunch", "Dinner"]
+  },
+  {
+    "name": "Pho with Chicken",
+    "cuisine": "Vietnamese",
+    "dietary_tags": ["high-protein"],
+    "ingredients": ["rice noodles", "chicken", "broth"],
+    "macros": {"calories": 450, "protein": 31, "carbs": 50, "fat": 8},
+    "allergens": [],
+    "meal_type": ["Lunch", "Dinner"]
+  },
+  {
+    "name": "Breakfast Burrito",
+    "cuisine": "Mexican",
+    "dietary_tags": ["high-protein"],
+    "ingredients": ["egg", "tortilla", "cheese", "sausage"],
+    "macros": {"calories": 690, "protein": 31, "carbs": 52, "fat": 38},
+    "allergens": ["egg", "dairy", "gluten"],
+    "meal_type": "Breakfast"
+  },
   {
     "name": "Salmon with Rice",
     "cuisine": "Japanese",
     "dietary_tags": ["pescatarian", "high-protein"],
     "ingredients": ["salmon", "rice", "soy sauce"],
     "macros": {"calories": 560, "protein": 39, "carbs": 44, "fat": 22},
-    "allergens": ["fish", "soy"]
+    "allergens": ["fish", "soy"],
+    "meal_type": ["Lunch", "Dinner"]
   },
   {
     "name": "Shrimp Tacos",
@@ -151,7 +196,8 @@
     "dietary_tags": ["pescatarian", "high-protein"],
     "ingredients": ["shrimp", "tortilla", "cabbage"],
     "macros": {"calories": 510, "protein": 29, "carbs": 41, "fat": 24},
-    "allergens": ["shellfish", "gluten"]
+    "allergens": ["shellfish", "gluten"],
+    "meal_type": ["Lunch", "Dinner"]
   },
   {
     "name": "Tuna Poke Bowl",
@@ -159,16 +205,17 @@
     "dietary_tags": ["pescatarian", "high-protein"],
     "ingredients": ["tuna", "rice", "soy sauce"],
     "macros": {"calories": 530, "protein": 34, "carbs": 50, "fat": 18},
-    "allergens": ["fish", "soy"]
+    "allergens": ["fish", "soy"],
+    "meal_type": ["Lunch", "Dinner"]
   },
-
   {
     "name": "Avocado Toast",
     "cuisine": "American",
     "dietary_tags": ["vegetarian"],
     "ingredients": ["bread", "avocado", "olive oil"],
     "macros": {"calories": 300, "protein": 8, "carbs": 34, "fat": 16},
-    "allergens": ["gluten"]
+    "allergens": ["gluten"],
+    "meal_type": "Breakfast"
   },
   {
     "name": "Caprese Salad",
@@ -176,7 +223,8 @@
     "dietary_tags": ["vegetarian", "gluten-free"],
     "ingredients": ["tomato", "mozzarella", "basil"],
     "macros": {"calories": 280, "protein": 14, "carbs": 10, "fat": 20},
-    "allergens": ["dairy"]
+    "allergens": ["dairy"],
+    "meal_type": ["Lunch", "Dinner"]
   },
   {
     "name": "Veggie Burger",
@@ -184,16 +232,17 @@
     "dietary_tags": ["vegetarian"],
     "ingredients": ["veggie patty", "bun", "lettuce"],
     "macros": {"calories": 480, "protein": 20, "carbs": 50, "fat": 18},
-    "allergens": ["gluten"]
+    "allergens": ["gluten"],
+    "meal_type": ["Lunch", "Dinner"]
   },
-
   {
     "name": "Falafel Wrap",
     "cuisine": "Middle Eastern",
     "dietary_tags": ["vegetarian"],
     "ingredients": ["falafel", "pita", "tahini"],
     "macros": {"calories": 550, "protein": 18, "carbs": 60, "fat": 22},
-    "allergens": ["gluten", "sesame"]
+    "allergens": ["gluten", "sesame"],
+    "meal_type": ["Lunch", "Dinner"]
   },
   {
     "name": "Hummus Plate",
@@ -201,7 +250,8 @@
     "dietary_tags": ["vegan"],
     "ingredients": ["chickpeas", "tahini", "olive oil"],
     "macros": {"calories": 400, "protein": 12, "carbs": 30, "fat": 26},
-    "allergens": ["sesame"]
+    "allergens": ["sesame"],
+    "meal_type": ["Lunch", "Dinner"]
   },
 
   {
@@ -210,7 +260,8 @@
     "dietary_tags": [],
     "ingredients": ["pasta", "beef", "tomato"],
     "macros": {"calories": 650, "protein": 30, "carbs": 70, "fat": 25},
-    "allergens": ["gluten"]
+    "allergens": ["gluten"],
+    "meal_type": ["Lunch", "Dinner"]
   },
   {
     "name": "Lasagna",
@@ -218,7 +269,8 @@
     "dietary_tags": [],
     "ingredients": ["pasta", "beef", "cheese"],
     "macros": {"calories": 720, "protein": 32, "carbs": 60, "fat": 38},
-    "allergens": ["gluten", "dairy"]
+    "allergens": ["gluten", "dairy"],
+    "meal_type": ["Lunch", "Dinner"]
   },
 
   {
@@ -227,7 +279,8 @@
     "dietary_tags": ["high-protein"],
     "ingredients": ["chicken", "pasta", "cream"],
     "macros": {"calories": 750, "protein": 40, "carbs": 60, "fat": 40},
-    "allergens": ["gluten", "dairy"]
+    "allergens": ["gluten", "dairy"],
+    "meal_type": ["Lunch", "Dinner"]
   },
 
   {
@@ -236,7 +289,8 @@
     "dietary_tags": ["vegetarian"],
     "ingredients": ["rice", "egg", "vegetables"],
     "macros": {"calories": 500, "protein": 14, "carbs": 65, "fat": 18},
-    "allergens": ["egg", "soy"]
+    "allergens": ["egg", "soy"],
+    "meal_type": ["Lunch", "Dinner"]
   },
 
   {
@@ -245,7 +299,8 @@
     "dietary_tags": ["high-protein"],
     "ingredients": ["rice", "chicken", "egg"],
     "macros": {"calories": 600, "protein": 30, "carbs": 65, "fat": 20},
-    "allergens": ["egg", "soy"]
+    "allergens": ["egg", "soy"],
+    "meal_type": ["Lunch", "Dinner"]
   },
 
   {
@@ -254,7 +309,8 @@
     "dietary_tags": ["high-protein"],
     "ingredients": ["beef", "vegetables", "soy sauce"],
     "macros": {"calories": 550, "protein": 35, "carbs": 25, "fat": 30},
-    "allergens": ["soy"]
+    "allergens": ["soy"],
+    "meal_type": ["Lunch", "Dinner"]
   },
 
   {
@@ -263,7 +319,8 @@
     "dietary_tags": ["high-protein", "low-carb"],
     "ingredients": ["chicken", "lettuce", "dressing"],
     "macros": {"calories": 350, "protein": 30, "carbs": 8, "fat": 20},
-    "allergens": ["egg"]
+    "allergens": ["egg"],
+    "meal_type": ["Lunch", "Dinner"]
   },
 
   {
@@ -272,7 +329,8 @@
     "dietary_tags": [],
     "ingredients": ["lettuce", "croutons", "parmesan"],
     "macros": {"calories": 330, "protein": 12, "carbs": 18, "fat": 22},
-    "allergens": ["gluten", "dairy"]
+    "allergens": ["gluten", "dairy"],
+    "meal_type": ["Lunch", "Dinner"]
   },
 
   {
@@ -281,7 +339,8 @@
     "dietary_tags": ["pescatarian", "high-protein", "gluten-free"],
     "ingredients": ["salmon", "quinoa", "lemon", "olive oil"],
     "macros": {"calories": 580, "protein": 42, "carbs": 40, "fat": 26},
-    "allergens": ["fish"]
+    "allergens": ["fish"],
+    "meal_type": ["Lunch", "Dinner"]
   },
   {
     "name": "Turkey Avocado Wrap",
@@ -289,7 +348,8 @@
     "dietary_tags": ["high-protein"],
     "ingredients": ["turkey", "tortilla", "avocado", "lettuce"],
     "macros": {"calories": 520, "protein": 35, "carbs": 38, "fat": 24},
-    "allergens": ["gluten"]
+    "allergens": ["gluten"],
+    "meal_type": ["Lunch", "Dinner"]
   },
   {
     "name": "Veggie Quesadilla",
@@ -297,15 +357,18 @@
     "dietary_tags": ["vegetarian"],
     "ingredients": ["tortilla", "cheese", "bell pepper", "onion"],
     "macros": {"calories": 540, "protein": 18, "carbs": 48, "fat": 30},
-    "allergens": ["dairy", "gluten"]
+    "allergens": ["dairy", "gluten"],
+    "meal_type": ["Lunch", "Dinner"]
   },
+
   {
     "name": "Chicken Fajita Bowl",
     "cuisine": "Mexican",
     "dietary_tags": ["high-protein", "gluten-free"],
     "ingredients": ["chicken", "rice", "peppers", "onion"],
     "macros": {"calories": 600, "protein": 40, "carbs": 55, "fat": 20},
-    "allergens": []
+    "allergens": [],
+    "meal_type": ["Lunch", "Dinner"]
   },
   {
     "name": "Egg Fried Rice",
@@ -313,7 +376,8 @@
     "dietary_tags": ["vegetarian"],
     "ingredients": ["rice", "egg", "soy sauce", "green onion"],
     "macros": {"calories": 480, "protein": 16, "carbs": 62, "fat": 18},
-    "allergens": ["egg", "soy"]
+    "allergens": ["egg", "soy"],
+    "meal_type": ["Lunch", "Dinner"]
   },
   {
     "name": "Shrimp Stir Fry",
@@ -321,15 +385,18 @@
     "dietary_tags": ["pescatarian", "high-protein"],
     "ingredients": ["shrimp", "vegetables", "soy sauce"],
     "macros": {"calories": 420, "protein": 34, "carbs": 20, "fat": 18},
-    "allergens": ["shellfish", "soy"]
+    "allergens": ["shellfish", "soy"],
+    "meal_type": ["Lunch", "Dinner"]
   },
+
   {
     "name": "Beef Tacos",
     "cuisine": "Mexican",
     "dietary_tags": ["high-protein"],
     "ingredients": ["beef", "tortilla", "lettuce", "cheese"],
     "macros": {"calories": 620, "protein": 34, "carbs": 42, "fat": 32},
-    "allergens": ["gluten", "dairy"]
+    "allergens": ["gluten", "dairy"],
+    "meal_type": ["Lunch", "Dinner"]
   },
   {
     "name": "Chicken Parmesan",
@@ -337,7 +404,8 @@
     "dietary_tags": ["high-protein"],
     "ingredients": ["chicken", "breadcrumbs", "cheese", "tomato sauce"],
     "macros": {"calories": 710, "protein": 45, "carbs": 48, "fat": 34},
-    "allergens": ["gluten", "dairy"]
+    "allergens": ["gluten", "dairy"],
+    "meal_type": ["Lunch", "Dinner"]
   },
   {
     "name": "Stuffed Bell Peppers",
@@ -345,15 +413,18 @@
     "dietary_tags": ["gluten-free"],
     "ingredients": ["bell pepper", "ground beef", "rice", "tomato"],
     "macros": {"calories": 480, "protein": 28, "carbs": 38, "fat": 22},
-    "allergens": []
+    "allergens": [],
+    "meal_type": ["Lunch", "Dinner"]
   },
+
   {
     "name": "Greek Chicken Bowl",
     "cuisine": "Mediterranean",
     "dietary_tags": ["high-protein", "gluten-free"],
     "ingredients": ["chicken", "rice", "tzatziki", "cucumber"],
     "macros": {"calories": 550, "protein": 42, "carbs": 45, "fat": 18},
-    "allergens": ["dairy"]
+    "allergens": ["dairy"],
+    "meal_type": ["Lunch", "Dinner"]
   },
   {
     "name": "Pasta Primavera",
@@ -361,7 +432,8 @@
     "dietary_tags": ["vegetarian"],
     "ingredients": ["pasta", "vegetables", "olive oil"],
     "macros": {"calories": 520, "protein": 14, "carbs": 70, "fat": 18},
-    "allergens": ["gluten"]
+    "allergens": ["gluten"],
+    "meal_type": ["Lunch", "Dinner"]
   },
   {
     "name": "BBQ Chicken Pizza",
@@ -369,15 +441,18 @@
     "dietary_tags": ["high-protein"],
     "ingredients": ["chicken", "pizza dough", "bbq sauce", "cheese"],
     "macros": {"calories": 760, "protein": 38, "carbs": 70, "fat": 34},
-    "allergens": ["gluten", "dairy"]
+    "allergens": ["gluten", "dairy"],
+    "meal_type": ["Lunch", "Dinner"]
   },
+
   {
     "name": "Spinach Ricotta Pasta",
     "cuisine": "Italian",
     "dietary_tags": ["vegetarian"],
     "ingredients": ["pasta", "spinach", "ricotta"],
     "macros": {"calories": 580, "protein": 20, "carbs": 65, "fat": 24},
-    "allergens": ["gluten", "dairy"]
+    "allergens": ["gluten", "dairy"],
+    "meal_type": ["Lunch", "Dinner"]
   },
   {
     "name": "Chicken Shawarma Wrap",
@@ -385,7 +460,8 @@
     "dietary_tags": ["high-protein"],
     "ingredients": ["chicken", "pita", "garlic sauce"],
     "macros": {"calories": 590, "protein": 36, "carbs": 44, "fat": 28},
-    "allergens": ["gluten", "dairy"]
+    "allergens": ["gluten", "dairy"],
+    "meal_type": ["Lunch", "Dinner"]
   },
   {
     "name": "Lemon Garlic Shrimp Pasta",
@@ -393,15 +469,18 @@
     "dietary_tags": ["pescatarian"],
     "ingredients": ["shrimp", "pasta", "garlic", "lemon"],
     "macros": {"calories": 610, "protein": 32, "carbs": 68, "fat": 20},
-    "allergens": ["gluten", "shellfish"]
+    "allergens": ["gluten", "shellfish"],
+    "meal_type": ["Lunch", "Dinner"]
   },
+
   {
     "name": "Chicken Teriyaki Bowl",
     "cuisine": "Japanese",
     "dietary_tags": ["high-protein"],
     "ingredients": ["chicken", "rice", "teriyaki sauce"],
     "macros": {"calories": 620, "protein": 38, "carbs": 65, "fat": 18},
-    "allergens": ["soy"]
+    "allergens": ["soy"],
+    "meal_type": ["Lunch", "Dinner"]
   },
   {
     "name": "Veggie Sushi Roll",
@@ -409,15 +488,18 @@
     "dietary_tags": ["vegan"],
     "ingredients": ["rice", "seaweed", "avocado", "cucumber"],
     "macros": {"calories": 300, "protein": 6, "carbs": 50, "fat": 8},
-    "allergens": []
+    "allergens": [],
+    "meal_type": ["Lunch", "Dinner"]
   },
+
   {
     "name": "Ground Turkey Bowl",
     "cuisine": "American",
     "dietary_tags": ["high-protein", "gluten-free"],
     "ingredients": ["turkey", "rice", "spinach"],
     "macros": {"calories": 510, "protein": 40, "carbs": 40, "fat": 18},
-    "allergens": []
+    "allergens": [],
+    "meal_type": ["Lunch", "Dinner"]
   },
   {
     "name": "Eggplant Parmesan",
@@ -425,15 +507,18 @@
     "dietary_tags": ["vegetarian"],
     "ingredients": ["eggplant", "breadcrumbs", "cheese", "tomato sauce"],
     "macros": {"calories": 600, "protein": 22, "carbs": 55, "fat": 30},
-    "allergens": ["gluten", "dairy"]
+    "allergens": ["gluten", "dairy"],
+    "meal_type": ["Lunch", "Dinner"]
   },
+
   {
     "name": "Protein Pancakes",
     "cuisine": "American",
     "dietary_tags": ["high-protein"],
     "ingredients": ["protein powder", "egg", "oats"],
     "macros": {"calories": 420, "protein": 35, "carbs": 38, "fat": 12},
-    "allergens": ["egg", "gluten"]
+    "allergens": ["egg", "gluten"],
+    "meal_type": "Breakfast"
   },
   {
     "name": "Chicken Gyro",
@@ -441,15 +526,18 @@
     "dietary_tags": ["high-protein"],
     "ingredients": ["chicken", "pita", "tzatziki", "lettuce"],
     "macros": {"calories": 570, "protein": 36, "carbs": 45, "fat": 26},
-    "allergens": ["gluten", "dairy"]
+    "allergens": ["gluten", "dairy"],
+    "meal_type": ["Lunch", "Dinner"]
   },
+
   {
     "name": "Vegan Buddha Bowl",
     "cuisine": "American",
     "dietary_tags": ["vegan", "gluten-free"],
     "ingredients": ["quinoa", "chickpeas", "sweet potato", "spinach"],
     "macros": {"calories": 500, "protein": 18, "carbs": 65, "fat": 18},
-    "allergens": []
+    "allergens": [],
+    "meal_type": ["Lunch", "Dinner"]
   },
   {
     "name": "Chicken and Veggie Skillet",
@@ -457,7 +545,8 @@
     "dietary_tags": ["high-protein", "low-carb", "gluten-free"],
     "ingredients": ["chicken", "zucchini", "bell pepper", "olive oil"],
     "macros": {"calories": 430, "protein": 38, "carbs": 12, "fat": 24},
-    "allergens": []
+    "allergens": [],
+    "meal_type": ["Lunch", "Dinner"]
   },
   {
     "name": "Beef Burrito",
@@ -465,7 +554,8 @@
     "dietary_tags": ["high-protein"],
     "ingredients": ["beef", "tortilla", "rice", "beans"],
     "macros": {"calories": 720, "protein": 36, "carbs": 75, "fat": 30},
-    "allergens": ["gluten"]
+    "allergens": ["gluten"],
+    "meal_type": ["Lunch", "Dinner"]
   },
   {
     "name": "Cottage Cheese Bowl",
@@ -473,7 +563,8 @@
     "dietary_tags": ["vegetarian", "high-protein", "low-carb"],
     "ingredients": ["cottage cheese", "berries", "honey"],
     "macros": {"calories": 300, "protein": 28, "carbs": 22, "fat": 10},
-    "allergens": ["dairy"]
+    "allergens": ["dairy"],
+    "meal_type": "Breakfast"
   },
   {
     "name": "Chicken Noodle Soup",
@@ -481,7 +572,8 @@
     "dietary_tags": ["high-protein"],
     "ingredients": ["chicken", "noodles", "carrot", "celery"],
     "macros": {"calories": 390, "protein": 28, "carbs": 42, "fat": 10},
-    "allergens": ["gluten"]
+    "allergens": ["gluten"],
+    "meal_type": ["Lunch", "Dinner"]
   },
   {
     "name": "Pesto Chicken Pasta",
@@ -489,7 +581,8 @@
     "dietary_tags": ["high-protein"],
     "ingredients": ["chicken", "pasta", "pesto"],
     "macros": {"calories": 680, "protein": 40, "carbs": 60, "fat": 28},
-    "allergens": ["gluten", "dairy", "nuts"]
+    "allergens": ["gluten", "dairy", "nuts"],
+    "meal_type": ["Lunch", "Dinner"]
   },
   {
     "name": "Veggie Tacos",
@@ -497,7 +590,8 @@
     "dietary_tags": ["vegetarian"],
     "ingredients": ["tortilla", "black beans", "corn", "avocado"],
     "macros": {"calories": 480, "protein": 16, "carbs": 60, "fat": 20},
-    "allergens": ["gluten"]
+    "allergens": ["gluten"],
+    "meal_type": ["Lunch", "Dinner"]
   },
   {
     "name": "Teriyaki Salmon Bowl",
@@ -505,7 +599,8 @@
     "dietary_tags": ["pescatarian", "high-protein"],
     "ingredients": ["salmon", "rice", "teriyaki sauce", "broccoli"],
     "macros": {"calories": 590, "protein": 38, "carbs": 50, "fat": 24},
-    "allergens": ["fish", "soy"]
+    "allergens": ["fish", "soy"],
+    "meal_type": ["Lunch", "Dinner"]
   },
   {
     "name": "Breakfast Oatmeal Bowl",
@@ -513,6 +608,116 @@
     "dietary_tags": ["vegetarian"],
     "ingredients": ["oats", "milk", "banana", "peanut butter"],
     "macros": {"calories": 450, "protein": 16, "carbs": 55, "fat": 18},
-    "allergens": ["dairy", "nuts", "gluten"]
+    "allergens": ["dairy", "nuts", "gluten"],
+    "meal_type": "Breakfast"
+  },
+  {
+    "name": "Chicken Enchilada Bowl",
+    "cuisine": "Mexican",
+    "dietary_tags": ["high-protein"],
+    "ingredients": ["chicken", "rice", "beans", "enchilada sauce"],
+    "macros": {"calories": 650, "protein": 40, "carbs": 60, "fat": 22},
+    "allergens": [],
+    "meal_type": ["Lunch", "Dinner"]
+  },
+  {
+    "name": "Breakfast Smoothie Bowl",
+    "cuisine": "American",
+    "dietary_tags": ["vegetarian", "gluten-free"],
+    "ingredients": ["banana", "berries", "yogurt", "granola"],
+    "macros": {"calories": 380, "protein": 14, "carbs": 60, "fat": 10},
+    "allergens": ["dairy", "gluten"],
+    "meal_type": "Breakfast"
+  },
+  {
+    "name": "Egg and Spinach Breakfast Wrap",
+    "cuisine": "American",
+    "dietary_tags": ["vegetarian", "high-protein"],
+    "ingredients": ["egg", "tortilla", "spinach", "cheese"],
+    "macros": {"calories": 420, "protein": 24, "carbs": 32, "fat": 20},
+    "allergens": ["egg", "dairy", "gluten"],
+    "meal_type": "Breakfast"
+  },
+
+  {
+    "name": "Grilled Steak Salad",
+    "cuisine": "American",
+    "dietary_tags": ["high-protein", "low-carb", "gluten-free"],
+    "ingredients": ["steak", "lettuce", "tomato", "olive oil"],
+    "macros": {"calories": 480, "protein": 36, "carbs": 10, "fat": 30},
+    "allergens": [],
+    "meal_type": ["Lunch", "Dinner"]
+  },
+  {
+    "name": "Chicken Pesto Wrap",
+    "cuisine": "Italian",
+    "dietary_tags": ["high-protein"],
+    "ingredients": ["chicken", "tortilla", "pesto", "spinach"],
+    "macros": {"calories": 550, "protein": 34, "carbs": 40, "fat": 26},
+    "allergens": ["gluten", "dairy", "nuts"],
+    "meal_type": ["Lunch", "Dinner"]
+  },
+  {
+    "name": "Beef and Broccoli",
+    "cuisine": "Asian",
+    "dietary_tags": ["high-protein", "low-carb"],
+    "ingredients": ["beef", "broccoli", "soy sauce", "garlic"],
+    "macros": {"calories": 430, "protein": 32, "carbs": 18, "fat": 24},
+    "allergens": ["soy"],
+    "meal_type": ["Lunch", "Dinner"]
+  },
+  {
+    "name": "Chicken Taco Salad",
+    "cuisine": "Mexican",
+    "dietary_tags": ["high-protein", "gluten-free"],
+    "ingredients": ["chicken", "lettuce", "corn", "cheese", "salsa"],
+    "macros": {"calories": 500, "protein": 35, "carbs": 30, "fat": 24},
+    "allergens": ["dairy"],
+    "meal_type": ["Lunch", "Dinner"]
+  },
+  {
+    "name": "Shrimp Scampi",
+    "cuisine": "Italian",
+    "dietary_tags": ["pescatarian"],
+    "ingredients": ["shrimp", "garlic", "butter", "lemon", "pasta"],
+    "macros": {"calories": 620, "protein": 30, "carbs": 55, "fat": 28},
+    "allergens": ["shellfish", "gluten", "dairy"],
+    "meal_type": ["Lunch", "Dinner"]
+  },
+  {
+    "name": "BBQ Pulled Pork Bowl",
+    "cuisine": "American",
+    "dietary_tags": ["high-protein", "gluten-free"],
+    "ingredients": ["pork", "rice", "bbq sauce", "coleslaw"],
+    "macros": {"calories": 650, "protein": 38, "carbs": 60, "fat": 28},
+    "allergens": [],
+    "meal_type": ["Lunch", "Dinner"]
+  },
+  {
+    "name": "Veggie Stuffed Sweet Potato",
+    "cuisine": "American",
+    "dietary_tags": ["vegetarian", "gluten-free"],
+    "ingredients": ["sweet potato", "black beans", "corn", "avocado"],
+    "macros": {"calories": 480, "protein": 14, "carbs": 65, "fat": 18},
+    "allergens": [],
+    "meal_type": ["Lunch", "Dinner"]
+  },
+  {
+    "name": "Chicken Ramen",
+    "cuisine": "Japanese",
+    "dietary_tags": ["high-protein"],
+    "ingredients": ["chicken", "noodles", "broth", "egg"],
+    "macros": {"calories": 580, "protein": 32, "carbs": 65, "fat": 20},
+    "allergens": ["gluten", "egg"],
+    "meal_type": ["Lunch", "Dinner"]
+  },
+  {
+    "name": "Mediterranean Grain Bowl",
+    "cuisine": "Mediterranean",
+    "dietary_tags": ["vegetarian"],
+    "ingredients": ["farro", "cucumber", "tomato", "feta", "olive oil"],
+    "macros": {"calories": 520, "protein": 16, "carbs": 60, "fat": 22},
+    "allergens": ["gluten", "dairy"],
+    "meal_type": ["Lunch", "Dinner"]
   }
 ]
